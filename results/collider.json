@@ -1,0 +1,35 @@
+{
+ "population_corr": -0.002584547600156197,
+ "by_share_posting": [
+  {
+   "share": 0.5,
+   "corr_among_posters": -0.2697606373550946,
+   "sd_over_20_runs": 0.004377822471234833
+  },
+  {
+   "share": 0.2,
+   "corr_among_posters": -0.35282681219510253,
+   "sd_over_20_runs": 0.005271771140308576
+  },
+  {
+   "share": 0.1,
+   "corr_among_posters": -0.3822660004200826,
+   "sd_over_20_runs": 0.006507420399078535
+  },
+  {
+   "share": 0.05,
+   "corr_among_posters": -0.40149088689927687,
+   "sd_over_20_runs": 0.00775741406296308
+  },
+  {
+   "share": 0.01,
+   "corr_among_posters": -0.4269868155577833,
+   "sd_over_20_runs": 0.01691472310141032
+  }
+ ],
+ "top10_example": {
+  "corr": -0.3793117875668572,
+  "mean_conviction_posters": 1.0150844334085871,
+  "mean_expertise_posters": 1.0118373524488735
+ }
+}
