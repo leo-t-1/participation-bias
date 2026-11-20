@@ -1,4 +1,4 @@
-“The people who post are the people who post” is a tautology. The word “tend” gives it a testable implication. Hearing someone speak today should help me predict whether they’ll speak next week, even on a different topic. This can explain why the same voices recur, why counting posts can give a distorted impression of public opinion, and why two traits can appear related among speakers even when they’re independent in the population.
+“The people who post are the people who post” is a tautology. The word “tend” gives it a testable implication. Hearing someone speak today should help me predict whether they’ll speak next week, even on a different topic. This can explain why counting posts can give a distorted impression of public opinion and why two traits can appear related among speakers even when they’re independent in the population.
 
 Give each person a posting rate p and a trait t, such as support for a policy. Someone with p = 0 goes unheard. Someone who writes ten posts gets ten chances to be read. If I draw a post uniformly, the expected trait of its author is
 
