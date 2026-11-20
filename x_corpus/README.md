@@ -8,6 +8,10 @@ Of accounts captured once through April, 43.4% appeared in the later period, com
 
 The original lexical and reply analysis reproduced exactly from the three checksum-verified shards. Equalizing the distribution of recorded search terms yielded reply shares of 64.9% versus 49.7% for one versus at least 26 early posts (minimum five posts per group per term). These are standardized group comparisons, distinct from counting all observed authors or posts. [Term sensitivity](term_sensitivity.json)
 
+![Reply weighting and expressed stance](x_weighting.png)
+
+The judge marked opposition in 328/600 posts sampled directly and 331/600 posts sampled through distinct accounts. In the separate tone sample, 5% of the one-early-post group and 28% of the 26+ group appeared organizational (160 accounts per group). Among individual-looking accounts the shares rated hostile were 31% and 28%, respectively. Apparent organization and automation depend on model judgments with incomplete evidence. [Tables, sample sizes and uncertainty](text_results.md) · [Aggregate results](text_summary.json)
+
 ## Reproduce
 
 From the repository root in a Python 3.13 environment with DuckDB, PyArrow, requests and vaderSentiment installed:

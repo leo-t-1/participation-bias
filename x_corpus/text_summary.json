@@ -1,0 +1,1226 @@
+{
+  "general": {
+    "0": {
+      "all": {
+        "n": 160,
+        "wordlist_means": {
+          "hedges": 0.26366126747492397,
+          "absolutes": 1.1937192702167005,
+          "negative": 0.2125
+        },
+        "reply": 92,
+        "hostile": 42,
+        "words_mean": 42.0,
+        "stance": {
+          "support": 2,
+          "oppose": 3,
+          "mixed": 0,
+          "none": 155
+        }
+      },
+      "person": {
+        "n": 150,
+        "wordlist_means": {
+          "hedges": 0.2607210085389088,
+          "absolutes": 1.219441833661694,
+          "negative": 0.20666666666666667
+        },
+        "reply": 91,
+        "hostile": 42,
+        "words_mean": 41.4,
+        "stance": {
+          "support": 1,
+          "oppose": 3,
+          "mixed": 0,
+          "none": 146
+        }
+      },
+      "organization": {
+        "n": 9,
+        "wordlist_means": {
+          "hedges": 0.34196127946127947,
+          "absolutes": 0.8976453539353326,
+          "negative": 0.3333333333333333
+        },
+        "reply": 1,
+        "hostile": 0,
+        "words_mean": 56.6,
+        "stance": {
+          "support": 1,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 8
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 1,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.0,
+          "negative": 0
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": 9,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 1
+        }
+      }
+    },
+    "1": {
+      "all": {
+        "n": 160,
+        "wordlist_means": {
+          "hedges": 0.10457437598758154,
+          "absolutes": 1.2251811209652212,
+          "negative": 0.225
+        },
+        "reply": 95,
+        "hostile": 48,
+        "words_mean": 62.0,
+        "stance": {
+          "support": 1,
+          "oppose": 9,
+          "mixed": 0,
+          "none": 150
+        }
+      },
+      "person": {
+        "n": 152,
+        "wordlist_means": {
+          "hedges": 0.11007829051324373,
+          "absolutes": 1.2338635705041558,
+          "negative": 0.21052631578947367
+        },
+        "reply": 95,
+        "hostile": 47,
+        "words_mean": 61.3,
+        "stance": {
+          "support": 1,
+          "oppose": 9,
+          "mixed": 0,
+          "none": 142
+        }
+      },
+      "organization": {
+        "n": 8,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 1.0602145797254647,
+          "negative": 0.5
+        },
+        "reply": 0,
+        "hostile": 1,
+        "words_mean": 74.4,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 8
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      }
+    },
+    "2-25": {
+      "all": {
+        "n": 160,
+        "wordlist_means": {
+          "hedges": 0.36222125628108365,
+          "absolutes": 1.2181344691039924,
+          "negative": 0.23125
+        },
+        "reply": 87,
+        "hostile": 37,
+        "words_mean": 59.8,
+        "stance": {
+          "support": 3,
+          "oppose": 4,
+          "mixed": 0,
+          "none": 153
+        }
+      },
+      "person": {
+        "n": 136,
+        "wordlist_means": {
+          "hedges": 0.4261426544483337,
+          "absolutes": 1.3698488968328593,
+          "negative": 0.25735294117647056
+        },
+        "reply": 83,
+        "hostile": 36,
+        "words_mean": 62.3,
+        "stance": {
+          "support": 2,
+          "oppose": 4,
+          "mixed": 0,
+          "none": 130
+        }
+      },
+      "organization": {
+        "n": 23,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.37400282988564876,
+          "negative": 0.08695652173913043
+        },
+        "reply": 4,
+        "hostile": 1,
+        "words_mean": 46.5,
+        "stance": {
+          "support": 1,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 22
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 1,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.0,
+          "negative": 0
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": 28,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 1
+        }
+      }
+    },
+    "26+": {
+      "all": {
+        "n": 160,
+        "wordlist_means": {
+          "hedges": 0.1334475050149079,
+          "absolutes": 0.8431268650047603,
+          "negative": 0.35
+        },
+        "reply": 59,
+        "hostile": 32,
+        "words_mean": 135.8,
+        "stance": {
+          "support": 0,
+          "oppose": 5,
+          "mixed": 0,
+          "none": 155
+        }
+      },
+      "person": {
+        "n": 112,
+        "wordlist_means": {
+          "hedges": 0.15641600727797655,
+          "absolutes": 0.9845444512271706,
+          "negative": 0.39285714285714285
+        },
+        "reply": 57,
+        "hostile": 31,
+        "words_mean": 153.5,
+        "stance": {
+          "support": 0,
+          "oppose": 3,
+          "mixed": 0,
+          "none": 109
+        }
+      },
+      "organization": {
+        "n": 45,
+        "wordlist_means": {
+          "hedges": 0.08517795527226425,
+          "absolutes": 0.5329326491992866,
+          "negative": 0.26666666666666666
+        },
+        "reply": 1,
+        "hostile": 1,
+        "words_mean": 91.9,
+        "stance": {
+          "support": 0,
+          "oppose": 2,
+          "mixed": 0,
+          "none": 43
+        }
+      },
+      "automated": {
+        "n": 3,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.21645021645021645,
+          "negative": 0
+        },
+        "reply": 1,
+        "hostile": 0,
+        "words_mean": 129.7,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 3
+        }
+      },
+      "unclear": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      }
+    }
+  },
+  "politics_accounts": {
+    "all": {
+      "all": {
+        "n": 600,
+        "wordlist_means": {
+          "hedges": 0.23454905749146548,
+          "absolutes": 1.2960375789090683,
+          "negative": 0.38666666666666666
+        },
+        "reply": 393,
+        "hostile": 265,
+        "words_mean": 109.7,
+        "stance": {
+          "support": 160,
+          "oppose": 331,
+          "mixed": 6,
+          "none": 103
+        }
+      },
+      "person": {
+        "n": 528,
+        "wordlist_means": {
+          "hedges": 0.26134352401084043,
+          "absolutes": 1.4162022821677203,
+          "negative": 0.38446969696969696
+        },
+        "reply": 383,
+        "hostile": 253,
+        "words_mean": 107.0,
+        "stance": {
+          "support": 144,
+          "oppose": 306,
+          "mixed": 6,
+          "none": 72
+        }
+      },
+      "organization": {
+        "n": 66,
+        "wordlist_means": {
+          "hedges": 0.006279885178889507,
+          "absolutes": 0.3754946183338441,
+          "negative": 0.3939393939393939
+        },
+        "reply": 8,
+        "hostile": 8,
+        "words_mean": 135.3,
+        "stance": {
+          "support": 14,
+          "oppose": 23,
+          "mixed": 0,
+          "none": 29
+        }
+      },
+      "automated": {
+        "n": 1,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.0,
+          "negative": 1
+        },
+        "reply": 1,
+        "hostile": 0,
+        "words_mean": 107,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 1
+        }
+      },
+      "unclear": {
+        "n": 5,
+        "wordlist_means": {
+          "hedges": 0.4651162790697675,
+          "absolutes": 1.017019510170195,
+          "negative": 0.4
+        },
+        "reply": 1,
+        "hostile": 4,
+        "words_mean": 57.2,
+        "stance": {
+          "support": 2,
+          "oppose": 2,
+          "mixed": 0,
+          "none": 1
+        }
+      }
+    },
+    "0": {
+      "all": {
+        "n": 382,
+        "wordlist_means": {
+          "hedges": 0.26002238709428643,
+          "absolutes": 1.3988430581311468,
+          "negative": 0.36387434554973824
+        },
+        "reply": 278,
+        "hostile": 178,
+        "words_mean": 87.1,
+        "stance": {
+          "support": 101,
+          "oppose": 216,
+          "mixed": 3,
+          "none": 62
+        }
+      },
+      "person": {
+        "n": 346,
+        "wordlist_means": {
+          "hedges": 0.28587884233586913,
+          "absolutes": 1.4933988816700228,
+          "negative": 0.35260115606936415
+        },
+        "reply": 269,
+        "hostile": 170,
+        "words_mean": 76.6,
+        "stance": {
+          "support": 93,
+          "oppose": 204,
+          "mixed": 3,
+          "none": 46
+        }
+      },
+      "organization": {
+        "n": 31,
+        "wordlist_means": {
+          "hedges": 0.013370078122797014,
+          "absolutes": 0.40506250314255665,
+          "negative": 0.45161290322580644
+        },
+        "reply": 7,
+        "hostile": 4,
+        "words_mean": 207,
+        "stance": {
+          "support": 6,
+          "oppose": 10,
+          "mixed": 0,
+          "none": 15
+        }
+      },
+      "automated": {
+        "n": 1,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.0,
+          "negative": 1
+        },
+        "reply": 1,
+        "hostile": 0,
+        "words_mean": 107,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 1
+        }
+      },
+      "unclear": {
+        "n": 4,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 1.271274387712744,
+          "negative": 0.5
+        },
+        "reply": 1,
+        "hostile": 4,
+        "words_mean": 61,
+        "stance": {
+          "support": 2,
+          "oppose": 2,
+          "mixed": 0,
+          "none": 0
+        }
+      }
+    },
+    "1": {
+      "all": {
+        "n": 89,
+        "wordlist_means": {
+          "hedges": 0.18340883164127758,
+          "absolutes": 1.2184769271979174,
+          "negative": 0.38202247191011235
+        },
+        "reply": 59,
+        "hostile": 44,
+        "words_mean": 61.8,
+        "stance": {
+          "support": 25,
+          "oppose": 51,
+          "mixed": 2,
+          "none": 11
+        }
+      },
+      "person": {
+        "n": 81,
+        "wordlist_means": {
+          "hedges": 0.17281240272499837,
+          "absolutes": 1.3333088635701984,
+          "negative": 0.38271604938271603
+        },
+        "reply": 59,
+        "hostile": 43,
+        "words_mean": 62.0,
+        "stance": {
+          "support": 25,
+          "oppose": 46,
+          "mixed": 2,
+          "none": 8
+        }
+      },
+      "organization": {
+        "n": 7,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.06377551020408163,
+          "negative": 0.42857142857142855
+        },
+        "reply": 0,
+        "hostile": 1,
+        "words_mean": 63,
+        "stance": {
+          "support": 0,
+          "oppose": 5,
+          "mixed": 0,
+          "none": 2
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 1,
+        "wordlist_means": {
+          "hedges": 2.3255813953488373,
+          "absolutes": 0.0,
+          "negative": 0
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": 42,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 1
+        }
+      }
+    },
+    "2-25": {
+      "all": {
+        "n": 117,
+        "wordlist_means": {
+          "hedges": 0.2099989948341042,
+          "absolutes": 1.083279634097877,
+          "negative": 0.4358974358974359
+        },
+        "reply": 55,
+        "hostile": 40,
+        "words_mean": 192.2,
+        "stance": {
+          "support": 30,
+          "oppose": 60,
+          "mixed": 0,
+          "none": 27
+        }
+      },
+      "person": {
+        "n": 94,
+        "wordlist_means": {
+          "hedges": 0.2613817276126616,
+          "absolutes": 1.2804862122290546,
+          "negative": 0.4787234042553192
+        },
+        "reply": 54,
+        "hostile": 38,
+        "words_mean": 224.1,
+        "stance": {
+          "support": 24,
+          "oppose": 53,
+          "mixed": 0,
+          "none": 17
+        }
+      },
+      "organization": {
+        "n": 23,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.2773049234748036,
+          "negative": 0.2608695652173913
+        },
+        "reply": 1,
+        "hostile": 2,
+        "words_mean": 62.3,
+        "stance": {
+          "support": 6,
+          "oppose": 7,
+          "mixed": 0,
+          "none": 10
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      }
+    },
+    "26+": {
+      "all": {
+        "n": 12,
+        "wordlist_means": {
+          "hedges": 0.04230118443316413,
+          "absolutes": 0.6730279524397171,
+          "negative": 0.6666666666666666
+        },
+        "reply": 1,
+        "hostile": 3,
+        "words_mean": 382.3,
+        "stance": {
+          "support": 4,
+          "oppose": 4,
+          "mixed": 1,
+          "none": 3
+        }
+      },
+      "person": {
+        "n": 7,
+        "wordlist_means": {
+          "hedges": 0.0725163161711385,
+          "absolutes": 0.3821528611444578,
+          "negative": 0.7142857142857143
+        },
+        "reply": 1,
+        "hostile": 2,
+        "words_mean": 564,
+        "stance": {
+          "support": 2,
+          "oppose": 3,
+          "mixed": 1,
+          "none": 1
+        }
+      },
+      "organization": {
+        "n": 5,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 1.08025308025308,
+          "negative": 0.6
+        },
+        "reply": 0,
+        "hostile": 1,
+        "words_mean": 128,
+        "stance": {
+          "support": 2,
+          "oppose": 1,
+          "mixed": 0,
+          "none": 2
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      }
+    }
+  },
+  "politics_posts": {
+    "all": {
+      "all": {
+        "n": 600,
+        "wordlist_means": {
+          "hedges": 0.18900810392983194,
+          "absolutes": 1.208352169468576,
+          "negative": 0.43166666666666664
+        },
+        "reply": 333,
+        "hostile": 257,
+        "words_mean": 153.9,
+        "stance": {
+          "support": 146,
+          "oppose": 328,
+          "mixed": 14,
+          "none": 112
+        }
+      },
+      "person": {
+        "n": 534,
+        "wordlist_means": {
+          "hedges": 0.20566656969542807,
+          "absolutes": 1.2758396572658663,
+          "negative": 0.44569288389513106
+        },
+        "reply": 328,
+        "hostile": 250,
+        "words_mean": 141.1,
+        "stance": {
+          "support": 130,
+          "oppose": 311,
+          "mixed": 14,
+          "none": 79
+        }
+      },
+      "organization": {
+        "n": 62,
+        "wordlist_means": {
+          "hedges": 0.05772442162162218,
+          "absolutes": 0.6552074692379724,
+          "negative": 0.3225806451612903
+        },
+        "reply": 5,
+        "hostile": 6,
+        "words_mean": 261.1,
+        "stance": {
+          "support": 14,
+          "oppose": 17,
+          "mixed": 0,
+          "none": 31
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 4,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.7725154021046439,
+          "negative": 0.25
+        },
+        "reply": 0,
+        "hostile": 1,
+        "words_mean": 195.5,
+        "stance": {
+          "support": 2,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 2
+        }
+      }
+    },
+    "0": {
+      "all": {
+        "n": 365,
+        "wordlist_means": {
+          "hedges": 0.2265376678777716,
+          "absolutes": 1.2505114690507935,
+          "negative": 0.4547945205479452
+        },
+        "reply": 225,
+        "hostile": 170,
+        "words_mean": 132.2,
+        "stance": {
+          "support": 84,
+          "oppose": 214,
+          "mixed": 8,
+          "none": 59
+        }
+      },
+      "person": {
+        "n": 337,
+        "wordlist_means": {
+          "hedges": 0.24267439584516626,
+          "absolutes": 1.3135878606928821,
+          "negative": 0.4599406528189911
+        },
+        "reply": 223,
+        "hostile": 169,
+        "words_mean": 124.1,
+        "stance": {
+          "support": 78,
+          "oppose": 206,
+          "mixed": 8,
+          "none": 45
+        }
+      },
+      "organization": {
+        "n": 26,
+        "wordlist_means": {
+          "hedges": 0.03480682213713888,
+          "absolutes": 0.5037504285937582,
+          "negative": 0.38461538461538464
+        },
+        "reply": 2,
+        "hostile": 1,
+        "words_mean": 234.1,
+        "stance": {
+          "support": 6,
+          "oppose": 8,
+          "mixed": 0,
+          "none": 12
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 2,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 0.33003300330033003,
+          "negative": 0.5
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": 172,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 2
+        }
+      }
+    },
+    "1": {
+      "all": {
+        "n": 65,
+        "wordlist_means": {
+          "hedges": 0.12565278725258378,
+          "absolutes": 1.2269841704924949,
+          "negative": 0.4153846153846154
+        },
+        "reply": 47,
+        "hostile": 37,
+        "words_mean": 157.1,
+        "stance": {
+          "support": 19,
+          "oppose": 29,
+          "mixed": 4,
+          "none": 13
+        }
+      },
+      "person": {
+        "n": 62,
+        "wordlist_means": {
+          "hedges": 0.09479604573451747,
+          "absolutes": 1.2695532970217016,
+          "negative": 0.41935483870967744
+        },
+        "reply": 46,
+        "hostile": 36,
+        "words_mean": 160.5,
+        "stance": {
+          "support": 18,
+          "oppose": 28,
+          "mixed": 4,
+          "none": 12
+        }
+      },
+      "organization": {
+        "n": 3,
+        "wordlist_means": {
+          "hedges": 0.7633587786259541,
+          "absolutes": 0.34722222222222227,
+          "negative": 0.3333333333333333
+        },
+        "reply": 1,
+        "hostile": 1,
+        "words_mean": 87,
+        "stance": {
+          "support": 1,
+          "oppose": 1,
+          "mixed": 0,
+          "none": 1
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      }
+    },
+    "2-25": {
+      "all": {
+        "n": 137,
+        "wordlist_means": {
+          "hedges": 0.14254178512823804,
+          "absolutes": 1.218118801888475,
+          "negative": 0.38686131386861317
+        },
+        "reply": 55,
+        "hostile": 43,
+        "words_mean": 155.1,
+        "stance": {
+          "support": 35,
+          "oppose": 74,
+          "mixed": 1,
+          "none": 27
+        }
+      },
+      "person": {
+        "n": 113,
+        "wordlist_means": {
+          "hedges": 0.17008830531151495,
+          "absolutes": 1.2792287884042315,
+          "negative": 0.4336283185840708
+        },
+        "reply": 53,
+        "hostile": 39,
+        "words_mean": 129.3,
+        "stance": {
+          "support": 27,
+          "oppose": 69,
+          "mixed": 1,
+          "none": 16
+        }
+      },
+      "organization": {
+        "n": 22,
+        "wordlist_means": {
+          "hedges": 0.014011184653064694,
+          "absolutes": 0.9045194166920453,
+          "negative": 0.18181818181818182
+        },
+        "reply": 2,
+        "hostile": 3,
+        "words_mean": 281.8,
+        "stance": {
+          "support": 6,
+          "oppose": 5,
+          "mixed": 0,
+          "none": 11
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 2,
+        "wordlist_means": {
+          "hedges": 0.0,
+          "absolutes": 1.2149978009089577,
+          "negative": 0
+        },
+        "reply": 0,
+        "hostile": 1,
+        "words_mean": 219,
+        "stance": {
+          "support": 2,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      }
+    },
+    "26+": {
+      "all": {
+        "n": 33,
+        "wordlist_means": {
+          "hedges": 0.09160478328866566,
+          "absolutes": 0.6647990465718977,
+          "negative": 0.3939393939393939
+        },
+        "reply": 6,
+        "hostile": 7,
+        "words_mean": 382.2,
+        "stance": {
+          "support": 8,
+          "oppose": 11,
+          "mixed": 1,
+          "none": 13
+        }
+      },
+      "person": {
+        "n": 22,
+        "wordlist_means": {
+          "hedges": 0.13397015826346764,
+          "absolutes": 0.6979141100658053,
+          "negative": 0.36363636363636365
+        },
+        "reply": 6,
+        "hostile": 6,
+        "words_mean": 407.9,
+        "stance": {
+          "support": 7,
+          "oppose": 8,
+          "mixed": 1,
+          "none": 6
+        }
+      },
+      "organization": {
+        "n": 11,
+        "wordlist_means": {
+          "hedges": 0.006874033339061694,
+          "absolutes": 0.5985689195840826,
+          "negative": 0.45454545454545453
+        },
+        "reply": 0,
+        "hostile": 1,
+        "words_mean": 330.7,
+        "stance": {
+          "support": 1,
+          "oppose": 3,
+          "mixed": 0,
+          "none": 7
+        }
+      },
+      "automated": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      },
+      "unclear": {
+        "n": 0,
+        "wordlist_means": {
+          "hedges": null,
+          "absolutes": null,
+          "negative": null
+        },
+        "reply": 0,
+        "hostile": 0,
+        "words_mean": null,
+        "stance": {
+          "support": 0,
+          "oppose": 0,
+          "mixed": 0,
+          "none": 0
+        }
+      }
+    }
+  }
+}
