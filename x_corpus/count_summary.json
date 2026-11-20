@@ -1,0 +1,62 @@
+[
+  {
+    "bin": "0",
+    "accounts": 4453076,
+    "early_posts": 0,
+    "late_posts": 9952563,
+    "late_accounts": 4453076,
+    "reappearance": null,
+    "post_reply_share": 0.5416254084500646,
+    "author_reply_share": 0.5206765545090831
+  },
+  {
+    "bin": "1",
+    "accounts": 2187061,
+    "early_posts": 2187061,
+    "late_posts": 3199821,
+    "late_accounts": 949315,
+    "reappearance": 0.4340596810056967,
+    "post_reply_share": 0.6192746406752128,
+    "author_reply_share": 0.6029308440864778
+  },
+  {
+    "bin": "2-4",
+    "accounts": 1301665,
+    "early_posts": 3418011,
+    "late_posts": 5011012,
+    "late_accounts": 916468,
+    "reappearance": 0.704073628775453,
+    "post_reply_share": 0.6379304220385024,
+    "author_reply_share": 0.612502007304931
+  },
+  {
+    "bin": "5-10",
+    "accounts": 519311,
+    "early_posts": 3526147,
+    "late_posts": 4767635,
+    "late_accounts": 456966,
+    "reappearance": 0.8799466986064227,
+    "post_reply_share": 0.6442752014363515,
+    "author_reply_share": 0.6084612807712718
+  },
+  {
+    "bin": "11-25",
+    "accounts": 265006,
+    "early_posts": 4216808,
+    "late_posts": 5010610,
+    "late_accounts": 248991,
+    "reappearance": 0.9395674060209958,
+    "post_reply_share": 0.6346211339537502,
+    "author_reply_share": 0.5949138071675367
+  },
+  {
+    "bin": "26+",
+    "accounts": 174881,
+    "early_posts": 17248330,
+    "late_posts": 13675500,
+    "late_accounts": 169183,
+    "reappearance": 0.9674178441340111,
+    "post_reply_share": 0.6263636430112245,
+    "author_reply_share": 0.5890418640358132
+  }
+]

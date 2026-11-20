@@ -1,0 +1,15 @@
+{
+  "accounts": 8901000,
+  "posts": 72213498,
+  "posts_per_account": 8.112964610717897,
+  "posts_per_post_author": 313.1100758752886,
+  "late_posts": 41617141,
+  "late_accounts": 7193999,
+  "late_replies": 25386150,
+  "post_reply_share": 0.6099926470201305,
+  "account_reply_share": 0.5529820373348424,
+  "top_decile_share": 0.7076505281602616,
+  "bias_percentage_points": 5.701060968528804,
+  "within_early_bins_pp": 3.0475753301680326,
+  "change_in_bin_mix_pp": 2.653485638367603
+}

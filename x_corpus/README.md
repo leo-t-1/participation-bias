@@ -2,9 +2,15 @@
 
 The [dataset card](https://huggingface.co/datasets/SinclairSchneider/tweets_sample_2026/blob/254bbe4cea800035ec544cf047d8b3bebc24fe99/README.md) documents a Nitter search over 65,689 terms from a newspaper vocabulary. The collector merged the results and removed duplicate post IDs. Search ranking and coverage varied by term and date. This permits descriptive comparisons inside the corpus. The probabilities that a given X user or post was captured are unknown. The publisher explicitly advises against using it to estimate platform prevalence or study particular accounts.
 
+Across all 73 shards, 72,213,498 eligible posts came from 8,901,000 observed handles. The most prolific tenth of handles contributed 70.8% of these posts. In May through July 27, replies were 61.0% of posts and 55.3% with equal weight per observed author. Both the HN and X post-weighted reply shares exceeded the corresponding account-weighted shares. Earlier activity and later reply behavior are a separate comparison. [Account weighting](weighting.json) · [Earlier activity groups](count_summary.json)
+
+Of accounts captured once through April, 43.4% appeared in the later period, compared with 96.7% of accounts captured at least 26 times. Among accounts captured exactly twice over the entire interval, 27.5% spanned both periods against 48.8% under shuffled dates. Both persistent differences and temporal clustering matter for predicting whose posts appear. [Timing control](timing_x.json)
+
+The original lexical and reply analysis reproduced exactly from the three checksum-verified shards. Equalizing the distribution of recorded search terms yielded reply shares of 64.9% versus 49.7% for one versus at least 26 early posts (minimum five posts per group per term). These are standardized group comparisons, distinct from counting all observed authors or posts. [Term sensitivity](term_sensitivity.json)
+
 ## Reproduce
 
-From the repository root in a Python 3.13 environment with DuckDB, PyArrow and requests installed:
+From the repository root in a Python 3.13 environment with DuckDB, PyArrow, requests and vaderSentiment installed:
 
 1. Run `python x_corpus/count.py` to retrieve the date, handle, retweet and reply fields across 73 shards and build local per-handle counts. Downloads are pinned to revision `254bbe4cea800035ec544cf047d8b3bebc24fe99`. Completed shards are cached. Run `python x_corpus/weights.py` for the exact post-versus-account contrast.
 2. Run `python x_corpus/text_shards.py` to fetch and checksum shards 0, 24 and 48. To reproduce the earlier three-shard lexical analysis, install NumPy and vaderSentiment and run `python xpass2.py xdata results`.

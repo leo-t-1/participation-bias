@@ -30,7 +30,7 @@ out = {}
 for low, key in [(True, "one"), (False, "26+")]:
     mass, rate = con.execute(
         "SELECT sum(mass),sum(reply_mass)/sum(mass) FROM cells WHERE low=?", [low]
-    ).fetchone()
+    ).fetchall()[0]
     out[key] = {"authors": round(mass), "reply_share": rate}
 for threshold in [1, 5, 20]:
     # Weight each retained term by the smaller of its two relative masses.

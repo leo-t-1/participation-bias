@@ -1,0 +1,42 @@
+{
+  "early_posts": 30596357,
+  "late_posts": 41617141,
+  "by_total_posts": {
+    "2": {
+      "accounts": 1397547,
+      "both_periods": 384038,
+      "observed": 0.274794336075996,
+      "shuffled": 0.4883545046012793
+    },
+    "3": {
+      "accounts": 734643,
+      "both_periods": 321784,
+      "observed": 0.43801411025491294,
+      "shuffled": 0.732531756901919
+    },
+    "5": {
+      "accounts": 326562,
+      "both_periods": 202871,
+      "observed": 0.6212327215046454,
+      "shuffled": 0.9227736091915193
+    },
+    "10": {
+      "accounts": 103028,
+      "both_periods": 82443,
+      "observed": 0.8001999456458438,
+      "shuffled": 0.9957721101847758
+    },
+    "20": {
+      "accounts": 30398,
+      "both_periods": 27260,
+      "observed": 0.8967695243108099,
+      "shuffled": 0.9999836318538534
+    },
+    "50": {
+      "accounts": 4984,
+      "both_periods": 4738,
+      "observed": 0.9506420545746388,
+      "shuffled": 0.9999999999989219
+    }
+  }
+}

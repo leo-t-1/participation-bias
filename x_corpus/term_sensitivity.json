@@ -1,0 +1,31 @@
+{
+  "one": {
+    "authors": 90031,
+    "reply_share": 0.6420686300525013
+  },
+  "26+": {
+    "authors": 4603,
+    "reply_share": 0.6110016601455374
+  },
+  "min_posts_per_group_1": {
+    "terms": 1845,
+    "retained_low_mass": 0.9652646686740197,
+    "retained_high_mass": 0.993362280312718,
+    "standardized_low": 0.6496038295457739,
+    "standardized_high": 0.4960203053613449
+  },
+  "min_posts_per_group_5": {
+    "terms": 1108,
+    "retained_low_mass": 0.8419832699960513,
+    "retained_high_mass": 0.9478510597590717,
+    "standardized_low": 0.6491836879581288,
+    "standardized_high": 0.4968179270474923
+  },
+  "min_posts_per_group_20": {
+    "terms": 490,
+    "retained_low_mass": 0.5668707395641273,
+    "retained_high_mass": 0.8092368989713273,
+    "standardized_low": 0.6457438593507208,
+    "standardized_high": 0.49277225272555647
+  }
+}
