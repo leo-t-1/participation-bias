@@ -1,15 +1,26 @@
-A thousand comments tell me how much was said. How many people wanted to say it? “People who post tend to post” becomes testable if seeing someone speak today predicts hearing from them on another topic next week. What do those repeat speakers change about what we hear?
+**Reading the sentence.** It links an act (posting now) to a disposition (being someone who posts). It is only "near" tautological because it makes an empirical claim: participation is driven mainly by who you are, not by the situation (topic, stakes, expertise).
 
-Give each person a posting rate p and a trait t, such as an opinion measured privately. Sampling a post weights its author by p. The gap between the post-weighted and person-weighted means is Cov(p,t)/E[p]. Setting t = p gives Var(p)/E[p], the built-in overrepresentation of prolific speakers. For any other trait the sign is open. Even if two people write nearly everything, their dominance tells us little about whether readers will overestimate support for a policy.
+**Model.** Give each person a posting rate p and any trait t (opinion, tone, expertise). A reader samples posts, not people, and a random post comes from person i with probability proportional to p_i. So
 
-I tested persistence on 144,483 Hacker News comments over two weeks. Among people who commented once in week one, 31% returned in week two, rising to 98% among those who commented at least 25 times. Activity on non-AI threads also predicted appearing on AI threads the next week. Situation still mattered. Of 4,195 people who commented exactly twice, 31% appeared in both weeks, against 50% if dates were shuffled across comments. When both comments belonged to the same story, just 2.7% crossed weeks. I would model each person’s rate as a baseline multiplied by a topic-specific factor.
+  mean of t over posts = E[p·t]/E[p] = E[t] + Cov(p, t)/E[p]
 
-On Hacker News, 77% of the analyzed comments were replies. Sampling an author first and then a comment gave 66%. I also predicted that frequent posters would express more extreme views about AI. Two model judges found no robust trend in extremity across 1,800 comments, although frequent posters sounded more sceptical. Individual ratings sometimes confused criticism of a company with criticism of AI.
+Setting t = p gives the author of a random post a rate of E[p] + Var(p)/E[p] (size-biased sampling). The bias explains something only if (1) p is unequal and stable, and (2) p correlates with t. If Cov(p, t) = 0, discourse is a fair sample however concentrated it is.
 
-In a public X corpus of 72.2 million non-retweets, 43% of accounts captured once in January-April reappeared in May-July, versus 97% of accounts captured at least 26 times. Searching 65,689 vocabulary terms makes persistent vocabulary another route to repeated capture. Replies made up 61.0% of later posts, or 55.3% with equal weight per author.
+**Test.** I fixed hypotheses first, then took every Hacker News comment from 1-14 Nov 2026 (144,483 comments, 26,624 users; rate from week 1, traits from week 2).
 
-Political speech gave a smaller contrast. From three shards I drew 600 posts mentioning Trump and 600 accounts contributing one such post each, after an English-word screen. A judge blind to the sampling rule classified 54.7% versus 55.2% as expressing opposition. The estimated gap was half a percentage point, with sampling uncertainty of roughly six points either way.
+- Concentration: supported. A random commenter wrote 5.4 comments; the author of a random comment wrote 35.9.
+- Disposition: supported, but situation matters too. Commenting again in week 2 rises from 31% (one comment in week 1) to 98% (25+), and activity on non-AI threads predicts commenting on AI threads (13% to 88%). Yet users with exactly two comments spread them over both weeks only 31% of the time (50% by chance). So p is a stable baseline times topical bursts.
+- Tone: partly. Replies are 77% of comments but 66% for the average commenter. LLM-rated hostility, blind to author, rises from 6% (silent in week 1) to 19% (25+).
+- Opinion: two LLM judges rated stance on AI for 1,800 comments. Heavy posters are not more extreme (hypothesis failed) but, exploratory, more sceptical (mean -0.05 to -0.62 on a -3 to 3 scale). Selection shifted the mean of visible opinion, not its spread.
 
-Silent readers are the missing comparison. In 2019, Pew linked survey responses to Twitter records and found that 55% of U.S. adult Twitter users strongly disapproved of Trump, and that group wrote 72% of tweets mentioning national politics. This shows how a view can be overrepresented among speakers even when an individual tweet reveals nothing about its author's opinion. To infer what people believe from a feed, we need to know who speaks, what they say, and which posts reach the reader.
+**X.** A public keyword-collected corpus (72M posts, 8.9M accounts, 2026; not a random sample) shows the same disposition: reappearing in May-July rises from 43% (one captured post in January-April) to 97% (26+). But the heavy tail is partly not people: in LLM ratings of 2,400 accounts, organisations and bots rise from 8% to 38%. Among individuals, neither hostility nor political extremity rises with rate (both hypotheses failed). Pew, matching surveys to accounts: strong Trump disapprovers were 55% of US adult users but wrote 72% of tweets on national politics.
 
-Code, sources and figures: https://github.com/leo-t-1/participation-bias
+**What it explains.**
+
+1. Misjudging the population when Cov(p, t) is not zero: Hacker News reads as more hostile and AI-sceptical than its users, political Twitter as more anti-Trump. The error is Cov(p, t)/E[p], per trait and platform, and it can be zero.
+2. Spurious trade-offs (collider bias). Simulate independent expertise and conviction, and let the top 10% by expertise + conviction + noise post: among posters the two correlate at -0.38. Confident people look less informed with no real link.
+3. Anything calibrated on posts inherits the p-weighting: a politician's sense of public mood, sentiment "polls", LLM training data.
+
+**What it does not explain.** Why p correlates with a trait. It also does not imply polarisation: my extremity hypothesis failed on both platforms. Algorithmic amplification is a separate reweighting on top. Limits: lurkers are invisible; LLM ratings are unvalidated.
+
+Code and figures: https://github.com/leo-t-1/participation-bias

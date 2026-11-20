@@ -42,7 +42,20 @@ LLM, blind to author (needs `OPENAI_API_KEY` in `.env`, see `.env.example`).
     0.03 to -0.47 (gpt-5.4-mini, first run), -0.11 to -0.74 (gpt-4.1), -0.05 to -0.62 (mean of both, rho = -0.15).
   - Results: `results/stance*.json`; every rating: `results/stance_ratings_*.json`.
 
+## X sample (SinclairSchneider/tweets_sample_2026 on Hugging Face)
+
+A keyword-collected corpus, not a random sample of X. Full-corpus counts and the account-weighting analysis are in `x_corpus/`
+(see its README). `x_llm.py` is a separate LLM-rated test on three shards (gpt-4.1, 400 accounts per posting-rate bin,
+hypotheses written in the script before running). Results: `results/x_llm_gpt-4.1.json`.
+
+- X1, heavy accounts are less often individual people: supported. Organisations and automated accounts rise from 8% (no posts
+  captured in Jan-Apr) to 38% (26+ captured posts).
+- X2, among individuals hostility rises with posting rate: not supported (Spearman rho = -0.01, p = 0.74).
+- X3, among individuals posting about politics, stance extremity rises with posting rate: not supported (rho = -0.05, p = 0.05).
+
+Posting-rate bins come from three of 73 shards, so they are thinned counts. Raw posts, handles and per-post ratings are not in this repo.
+
 ## Limits
 
 Lurkers are invisible, so true concentration is larger. Word-list and VADER traits are crude; LLM ratings are not human-validated.
-Hacker News is not X.
+Neither sample is the population.
