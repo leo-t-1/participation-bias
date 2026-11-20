@@ -1,0 +1,52 @@
+{
+  "early_posts": 69585,
+  "late_posts": 74898,
+  "by_total_posts": {
+    "2": {
+      "accounts": 4195,
+      "both_periods": 1302,
+      "observed": 0.3103694874851013,
+      "shuffled": 0.4993273478654548
+    },
+    "3": {
+      "accounts": 2269,
+      "both_periods": 1154,
+      "observed": 0.5085940943146761,
+      "shuffled": 0.7489910217981821
+    },
+    "5": {
+      "accounts": 1044,
+      "both_periods": 756,
+      "observed": 0.7241379310344828,
+      "shuffled": 0.9366586309091743
+    },
+    "10": {
+      "accounts": 351,
+      "both_periods": 295,
+      "observed": 0.8404558404558404,
+      "shuffled": 0.9979279074057025
+    },
+    "20": {
+      "accounts": 88,
+      "both_periods": 85,
+      "observed": 0.9659090909090909,
+      "shuffled": 0.9999975885681335
+    },
+    "50": {
+      "accounts": 11,
+      "both_periods": 11,
+      "observed": 1.0,
+      "shuffled": 0.9999999999999946
+    }
+  },
+  "two_commenters_by_story": {
+    "same_story": {
+      "n": 1154,
+      "both_weeks": 31
+    },
+    "different_stories": {
+      "n": 3041,
+      "both_weeks": 1271
+    }
+  }
+}

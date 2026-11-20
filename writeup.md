@@ -1,0 +1,13 @@
+A thousand comments tell me how much was said. How many people wanted to say it? “People who post tend to post” becomes testable if seeing someone speak today predicts hearing from them on another topic next week. A second question is whether those repeat speakers differ in a way that changes what a reader learns.
+
+Give each person a posting rate p and a trait t, such as an opinion measured privately. Sampling a post weights its author by p. Across people, the difference between the post-weighted and person-weighted means is Cov(p,t)/E[p]. Setting t = p gives a gap of Var(p)/E[p]: prolific speakers are overrepresented by construction. For any other trait the sign is open. Even if two people write nearly everything, their dominance tells us little about whether readers will overestimate support for a policy.
+
+I tested persistence on 144,483 Hacker News comments over two weeks. Among people who commented once in week one, 31% returned in week two, rising to 98% among those who commented at least 25 times. Activity on non-AI threads also predicted appearing on AI threads the next week. Situation still mattered. Of 4,195 people who commented exactly twice, 31% appeared in both weeks, against 50% if dates were shuffled across comments. When both comments belonged to the same story, just 2.7% crossed weeks. I would model a person's rate as a baseline multiplied by their interest in the topic at hand.
+
+What does this change for a reader? On Hacker News, 77% of the analyzed comments were replies. Sampling an author first and then a comment gave 66%. I also predicted that frequent posters would express more extreme views about AI. Two model judges found no robust trend in extremity across 1,800 comments, although frequent posters sounded more sceptical. Individual ratings sometimes confused criticism of a company with criticism of AI.
+
+In three shards of a public X corpus, 26% of accounts captured once in January-April reappeared in May-July, compared with 96% of those captured at least 26 times. The corpus was assembled by searching 65,689 vocabulary terms, so persistent vocabulary can also produce persistent visibility.
+
+Silent readers are the missing comparison. Pew linked survey responses to Twitter records: 55% of U.S. adult Twitter users strongly disapproved of Trump, and that group wrote 72% of tweets mentioning national politics. This shows how a view can be overrepresented among speakers even when an individual tweet reveals nothing about its author's opinion. To infer what people believe from a feed, we need to know who speaks, what they say, and which posts reach the reader.
+
+Code, sources and figures: https://github.com/leo-t-1/participation-bias

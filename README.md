@@ -1,5 +1,7 @@
 # Participation bias in public discourse
 
+[One-page write-up](writeup.md) · [X corpus and sampling methods](x_corpus/README.md) · [Thread breadth comparison](breadth_experiment/results.json)
+
 Code and figures for a short write-up on the question: people who participate in public discourse tend to be
 the kind of people who tend to participate. What does this explain, and how would you model it?
 

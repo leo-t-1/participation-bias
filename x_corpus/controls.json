@@ -1,0 +1,85 @@
+{
+  "model": "gpt-4.1",
+  "cases": [
+    {
+      "text": "I support Trump's approach to this issue.",
+      "intended": "support",
+      "rated": "support"
+    },
+    {
+      "text": "The presenter read a viewer message aloud: \u201cI support Trump\u2019s approach to this issue.\u201d",
+      "intended": "none",
+      "rated": "none"
+    },
+    {
+      "text": "I oppose Trump's approach to this issue.",
+      "intended": "oppose",
+      "rated": "oppose"
+    },
+    {
+      "text": "The presenter read a viewer message aloud: \u201cI oppose Trump\u2019s approach to this issue.\u201d",
+      "intended": "none",
+      "rated": "none"
+    },
+    {
+      "text": "I think Trump made exactly the right call today.",
+      "intended": "support",
+      "rated": "support"
+    },
+    {
+      "text": "According to its press release, the campaign says Trump made exactly the right call today.",
+      "intended": "none",
+      "rated": "none"
+    },
+    {
+      "text": "Trump's decision today was indefensible.",
+      "intended": "oppose",
+      "rated": "oppose"
+    },
+    {
+      "text": "Tuesday\u2019s headline quotes a senator calling Trump\u2019s decision \u201cindefensible.\u201d",
+      "intended": "none",
+      "rated": "none"
+    },
+    {
+      "text": "I support Trump's first proposal and oppose his second.",
+      "intended": "mixed",
+      "rated": "mixed"
+    },
+    {
+      "text": "The committee will review Trump's first and second proposals at two o'clock.",
+      "intended": "none",
+      "rated": "none"
+    },
+    {
+      "text": "Does anyone have a transcript of Trump's speech?",
+      "intended": "none",
+      "rated": "none"
+    },
+    {
+      "text": "The transcript of Trump's speech came online an hour ago.",
+      "intended": "none",
+      "rated": "none"
+    },
+    {
+      "text": "I wish Trump would reverse this decision. It will hurt people.",
+      "intended": "oppose",
+      "rated": "oppose"
+    },
+    {
+      "text": "The amendment Trump signed yesterday takes effect next month.",
+      "intended": "none",
+      "rated": "none"
+    },
+    {
+      "text": "Trump deserves credit for this decision.",
+      "intended": "support",
+      "rated": "support"
+    },
+    {
+      "text": "A caller said Trump deserved credit for the decision. The broadcast then ended.",
+      "intended": "none",
+      "rated": "none"
+    }
+  ]
+}

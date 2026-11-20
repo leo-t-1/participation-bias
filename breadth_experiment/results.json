@@ -1,0 +1,1583 @@
+{
+  "input_rows": 144483,
+  "periods": {
+    "fortnight": {
+      "matched_volume": [
+        {
+          "story": 50365982,
+          "title": "US voters roundly reject data centers in ballot measures",
+          "comments": 754,
+          "people": 364,
+          "cap_two": 515,
+          "comments_rank": 13,
+          "people_rank": 25,
+          "cap_two_rank": 21,
+          "most_active_two": 49
+        },
+        {
+          "story": 50364336,
+          "title": "AI is forcing us to pay off 40 years of technical debt",
+          "comments": 753,
+          "people": 509,
+          "cap_two": 655,
+          "comments_rank": 14,
+          "people_rank": 15,
+          "cap_two_rank": 13,
+          "most_active_two": 15
+        }
+      ],
+      "stories": 5929,
+      "comments": 144483,
+      "overlap": {
+        "10": {
+          "cap_two": 10,
+          "people": 9
+        },
+        "20": {
+          "cap_two": 19,
+          "people": 18
+        },
+        "50": {
+          "cap_two": 45,
+          "people": 43
+        }
+      },
+      "example": [
+        {
+          "story": 50365982,
+          "title": "US voters roundly reject data centers in ballot measures",
+          "comments": 754,
+          "people": 364,
+          "cap_two": 515,
+          "comments_rank": 13,
+          "people_rank": 25,
+          "cap_two_rank": 21,
+          "most_active_two": 49
+        },
+        {
+          "story": 50338726,
+          "title": "Ask HN: Who wants to be hired? (November 2026)",
+          "comments": 644,
+          "people": 643,
+          "cap_two": 644,
+          "comments_rank": 21,
+          "people_rank": 7,
+          "cap_two_rank": 15,
+          "most_active_two": 3
+        }
+      ],
+      "cutoff_scores": {
+        "comments": [
+          664,
+          644
+        ],
+        "people": [
+          397,
+          392
+        ],
+        "cap_two": [
+          516,
+          515
+        ]
+      },
+      "top20": {
+        "comments": [
+          {
+            "story": 50467087,
+            "title": "Jensen Huang resigns",
+            "comments": 3325,
+            "people": 1768,
+            "cap_two": 2400,
+            "comments_rank": 1,
+            "people_rank": 1,
+            "cap_two_rank": 1,
+            "most_active_two": 69
+          },
+          {
+            "story": 50391456,
+            "title": "Tesla to wind down Cybertruck production",
+            "comments": 2084,
+            "people": 1081,
+            "cap_two": 1475,
+            "comments_rank": 2,
+            "people_rank": 2,
+            "cap_two_rank": 2,
+            "most_active_two": 46
+          },
+          {
+            "story": 50459703,
+            "title": "Nvidia is preparing to oust Jensen Huang",
+            "comments": 1622,
+            "people": 929,
+            "cap_two": 1247,
+            "comments_rank": 3,
+            "people_rank": 3,
+            "cap_two_rank": 3,
+            "most_active_two": 32
+          },
+          {
+            "story": 50418016,
+            "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+            "comments": 1293,
+            "people": 732,
+            "cap_two": 1003,
+            "comments_rank": 4,
+            "people_rank": 6,
+            "cap_two_rank": 4,
+            "most_active_two": 25
+          },
+          {
+            "story": 50489641,
+            "title": "FAA issues national ground stop – lifted 4.5 hours later",
+            "comments": 1220,
+            "people": 761,
+            "cap_two": 990,
+            "comments_rank": 5,
+            "people_rank": 5,
+            "cap_two_rank": 5,
+            "most_active_two": 33
+          },
+          {
+            "story": 50417407,
+            "title": "Ask HN: What are you working on? (November 2026)",
+            "comments": 1067,
+            "people": 840,
+            "cap_two": 982,
+            "comments_rank": 6,
+            "people_rank": 4,
+            "cap_two_rank": 6,
+            "most_active_two": 19
+          },
+          {
+            "story": 50418975,
+            "title": "I'm not convinced the AI bubble exists",
+            "comments": 975,
+            "people": 577,
+            "cap_two": 756,
+            "comments_rank": 7,
+            "people_rank": 11,
+            "cap_two_rank": 10,
+            "most_active_two": 27
+          },
+          {
+            "story": 50471731,
+            "title": "Service degradation on Microsoft 365",
+            "comments": 963,
+            "people": 617,
+            "cap_two": 802,
+            "comments_rank": 8,
+            "people_rank": 8,
+            "cap_two_rank": 7,
+            "most_active_two": 30
+          },
+          {
+            "story": 50465829,
+            "title": "Anthropic IPO",
+            "comments": 916,
+            "people": 585,
+            "cap_two": 759,
+            "comments_rank": 9,
+            "people_rank": 10,
+            "cap_two_rank": 9,
+            "most_active_two": 19
+          },
+          {
+            "story": 50341174,
+            "title": "Astra can read and write weights to improve Qwen",
+            "comments": 901,
+            "people": 597,
+            "cap_two": 762,
+            "comments_rank": 10,
+            "people_rank": 9,
+            "cap_two_rank": 8,
+            "most_active_two": 19
+          },
+          {
+            "story": 50328896,
+            "title": "Ask HN: Which TV do you recommend for privacy?",
+            "comments": 885,
+            "people": 567,
+            "cap_two": 710,
+            "comments_rank": 11,
+            "people_rank": 12,
+            "cap_two_rank": 11,
+            "most_active_two": 35
+          },
+          {
+            "story": 50429068,
+            "title": "Claude Fable 5.2 and Mythos 5.2",
+            "comments": 842,
+            "people": 544,
+            "cap_two": 678,
+            "comments_rank": 12,
+            "people_rank": 14,
+            "cap_two_rank": 12,
+            "most_active_two": 39
+          },
+          {
+            "story": 50365982,
+            "title": "US voters roundly reject data centers in ballot measures",
+            "comments": 754,
+            "people": 364,
+            "cap_two": 515,
+            "comments_rank": 13,
+            "people_rank": 25,
+            "cap_two_rank": 21,
+            "most_active_two": 49
+          },
+          {
+            "story": 50364336,
+            "title": "AI is forcing us to pay off 40 years of technical debt",
+            "comments": 753,
+            "people": 509,
+            "cap_two": 655,
+            "comments_rank": 14,
+            "people_rank": 15,
+            "cap_two_rank": 13,
+            "most_active_two": 15
+          },
+          {
+            "story": 50378228,
+            "title": "sshole",
+            "comments": 751,
+            "people": 449,
+            "cap_two": 577,
+            "comments_rank": 15,
+            "people_rank": 16,
+            "cap_two_rank": 16,
+            "most_active_two": 31
+          },
+          {
+            "story": 50366117,
+            "title": "Ask HN: What's your current AI agentic setup?",
+            "comments": 714,
+            "people": 559,
+            "cap_two": 655,
+            "comments_rank": 16,
+            "people_rank": 13,
+            "cap_two_rank": 14,
+            "most_active_two": 23
+          },
+          {
+            "story": 50458900,
+            "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "comments": 706,
+            "people": 439,
+            "cap_two": 572,
+            "comments_rank": 17,
+            "people_rank": 17,
+            "cap_two_rank": 17,
+            "most_active_two": 20
+          },
+          {
+            "story": 50337608,
+            "title": "WTF Ubuntu?",
+            "comments": 688,
+            "people": 434,
+            "cap_two": 571,
+            "comments_rank": 18,
+            "people_rank": 18,
+            "cap_two_rank": 18,
+            "most_active_two": 17
+          },
+          {
+            "story": 50477231,
+            "title": "Nvidia employees petition to bring back Jensen Huang",
+            "comments": 680,
+            "people": 392,
+            "cap_two": 516,
+            "comments_rank": 19,
+            "people_rank": 21,
+            "cap_two_rank": 20,
+            "most_active_two": 28
+          },
+          {
+            "story": 50484658,
+            "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+            "comments": 664,
+            "people": 397,
+            "cap_two": 518,
+            "comments_rank": 20,
+            "people_rank": 20,
+            "cap_two_rank": 19,
+            "most_active_two": 21
+          }
+        ],
+        "people": [
+          {
+            "story": 50467087,
+            "title": "Jensen Huang resigns",
+            "comments": 3325,
+            "people": 1768,
+            "cap_two": 2400,
+            "comments_rank": 1,
+            "people_rank": 1,
+            "cap_two_rank": 1,
+            "most_active_two": 69
+          },
+          {
+            "story": 50391456,
+            "title": "Tesla to wind down Cybertruck production",
+            "comments": 2084,
+            "people": 1081,
+            "cap_two": 1475,
+            "comments_rank": 2,
+            "people_rank": 2,
+            "cap_two_rank": 2,
+            "most_active_two": 46
+          },
+          {
+            "story": 50459703,
+            "title": "Nvidia is preparing to oust Jensen Huang",
+            "comments": 1622,
+            "people": 929,
+            "cap_two": 1247,
+            "comments_rank": 3,
+            "people_rank": 3,
+            "cap_two_rank": 3,
+            "most_active_two": 32
+          },
+          {
+            "story": 50417407,
+            "title": "Ask HN: What are you working on? (November 2026)",
+            "comments": 1067,
+            "people": 840,
+            "cap_two": 982,
+            "comments_rank": 6,
+            "people_rank": 4,
+            "cap_two_rank": 6,
+            "most_active_two": 19
+          },
+          {
+            "story": 50489641,
+            "title": "FAA issues national ground stop – lifted 4.5 hours later",
+            "comments": 1220,
+            "people": 761,
+            "cap_two": 990,
+            "comments_rank": 5,
+            "people_rank": 5,
+            "cap_two_rank": 5,
+            "most_active_two": 33
+          },
+          {
+            "story": 50418016,
+            "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+            "comments": 1293,
+            "people": 732,
+            "cap_two": 1003,
+            "comments_rank": 4,
+            "people_rank": 6,
+            "cap_two_rank": 4,
+            "most_active_two": 25
+          },
+          {
+            "story": 50338726,
+            "title": "Ask HN: Who wants to be hired? (November 2026)",
+            "comments": 644,
+            "people": 643,
+            "cap_two": 644,
+            "comments_rank": 21,
+            "people_rank": 7,
+            "cap_two_rank": 15,
+            "most_active_two": 3
+          },
+          {
+            "story": 50471731,
+            "title": "Service degradation on Microsoft 365",
+            "comments": 963,
+            "people": 617,
+            "cap_two": 802,
+            "comments_rank": 8,
+            "people_rank": 8,
+            "cap_two_rank": 7,
+            "most_active_two": 30
+          },
+          {
+            "story": 50341174,
+            "title": "Astra can read and write weights to improve Qwen",
+            "comments": 901,
+            "people": 597,
+            "cap_two": 762,
+            "comments_rank": 10,
+            "people_rank": 9,
+            "cap_two_rank": 8,
+            "most_active_two": 19
+          },
+          {
+            "story": 50465829,
+            "title": "Anthropic IPO",
+            "comments": 916,
+            "people": 585,
+            "cap_two": 759,
+            "comments_rank": 9,
+            "people_rank": 10,
+            "cap_two_rank": 9,
+            "most_active_two": 19
+          },
+          {
+            "story": 50418975,
+            "title": "I'm not convinced the AI bubble exists",
+            "comments": 975,
+            "people": 577,
+            "cap_two": 756,
+            "comments_rank": 7,
+            "people_rank": 11,
+            "cap_two_rank": 10,
+            "most_active_two": 27
+          },
+          {
+            "story": 50328896,
+            "title": "Ask HN: Which TV do you recommend for privacy?",
+            "comments": 885,
+            "people": 567,
+            "cap_two": 710,
+            "comments_rank": 11,
+            "people_rank": 12,
+            "cap_two_rank": 11,
+            "most_active_two": 35
+          },
+          {
+            "story": 50366117,
+            "title": "Ask HN: What's your current AI agentic setup?",
+            "comments": 714,
+            "people": 559,
+            "cap_two": 655,
+            "comments_rank": 16,
+            "people_rank": 13,
+            "cap_two_rank": 14,
+            "most_active_two": 23
+          },
+          {
+            "story": 50429068,
+            "title": "Claude Fable 5.2 and Mythos 5.2",
+            "comments": 842,
+            "people": 544,
+            "cap_two": 678,
+            "comments_rank": 12,
+            "people_rank": 14,
+            "cap_two_rank": 12,
+            "most_active_two": 39
+          },
+          {
+            "story": 50364336,
+            "title": "AI is forcing us to pay off 40 years of technical debt",
+            "comments": 753,
+            "people": 509,
+            "cap_two": 655,
+            "comments_rank": 14,
+            "people_rank": 15,
+            "cap_two_rank": 13,
+            "most_active_two": 15
+          },
+          {
+            "story": 50378228,
+            "title": "sshole",
+            "comments": 751,
+            "people": 449,
+            "cap_two": 577,
+            "comments_rank": 15,
+            "people_rank": 16,
+            "cap_two_rank": 16,
+            "most_active_two": 31
+          },
+          {
+            "story": 50458900,
+            "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "comments": 706,
+            "people": 439,
+            "cap_two": 572,
+            "comments_rank": 17,
+            "people_rank": 17,
+            "cap_two_rank": 17,
+            "most_active_two": 20
+          },
+          {
+            "story": 50337608,
+            "title": "WTF Ubuntu?",
+            "comments": 688,
+            "people": 434,
+            "cap_two": 571,
+            "comments_rank": 18,
+            "people_rank": 18,
+            "cap_two_rank": 18,
+            "most_active_two": 17
+          },
+          {
+            "story": 50438318,
+            "title": "AI usage generates a fragile codebase",
+            "comments": 626,
+            "people": 398,
+            "cap_two": 511,
+            "comments_rank": 23,
+            "people_rank": 19,
+            "cap_two_rank": 22,
+            "most_active_two": 21
+          },
+          {
+            "story": 50484658,
+            "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+            "comments": 664,
+            "people": 397,
+            "cap_two": 518,
+            "comments_rank": 20,
+            "people_rank": 20,
+            "cap_two_rank": 19,
+            "most_active_two": 21
+          }
+        ]
+      }
+    },
+    "week1": {
+      "matched_volume": [
+        {
+          "story": 50335615,
+          "title": "Supermarket freezers across Europe hit by second suspected cyber-attack",
+          "comments": 454,
+          "people": 313,
+          "cap_two": 389,
+          "comments_rank": 18,
+          "people_rank": 15,
+          "cap_two_rank": 16,
+          "most_active_two": 14
+        },
+        {
+          "story": 50367653,
+          "title": "'It's just vape, nail, charity shops': Can anything save UK high street?",
+          "comments": 453,
+          "people": 237,
+          "cap_two": 319,
+          "comments_rank": 19,
+          "people_rank": 31,
+          "cap_two_rank": 27,
+          "most_active_two": 27
+        }
+      ],
+      "stories": 3189,
+      "comments": 69585,
+      "overlap": {
+        "10": {
+          "cap_two": 9,
+          "people": 8
+        },
+        "20": {
+          "cap_two": 17,
+          "people": 16
+        },
+        "50": {
+          "cap_two": 47,
+          "people": 45
+        }
+      },
+      "example": [
+        {
+          "story": 50365982,
+          "title": "US voters roundly reject data centers in ballot measures",
+          "comments": 746,
+          "people": 364,
+          "cap_two": 514,
+          "comments_rank": 5,
+          "people_rank": 11,
+          "cap_two_rank": 8,
+          "most_active_two": 49
+        },
+        {
+          "story": 50338726,
+          "title": "Ask HN: Who wants to be hired? (November 2026)",
+          "comments": 512,
+          "people": 511,
+          "cap_two": 512,
+          "comments_rank": 13,
+          "people_rank": 5,
+          "cap_two_rank": 9,
+          "most_active_two": 3
+        }
+      ],
+      "cutoff_scores": {
+        "comments": [
+          453,
+          449
+        ],
+        "people": [
+          277,
+          275
+        ],
+        "cap_two": [
+          356,
+          349
+        ]
+      },
+      "top20": {
+        "comments": [
+          {
+            "story": 50391456,
+            "title": "Tesla to wind down Cybertruck production",
+            "comments": 1988,
+            "people": 1064,
+            "cap_two": 1437,
+            "comments_rank": 1,
+            "people_rank": 1,
+            "cap_two_rank": 1,
+            "most_active_two": 42
+          },
+          {
+            "story": 50341174,
+            "title": "Astra can read and write weights to improve Qwen",
+            "comments": 899,
+            "people": 597,
+            "cap_two": 762,
+            "comments_rank": 2,
+            "people_rank": 2,
+            "cap_two_rank": 2,
+            "most_active_two": 19
+          },
+          {
+            "story": 50328896,
+            "title": "Ask HN: Which TV do you recommend for privacy?",
+            "comments": 885,
+            "people": 567,
+            "cap_two": 710,
+            "comments_rank": 3,
+            "people_rank": 3,
+            "cap_two_rank": 3,
+            "most_active_two": 35
+          },
+          {
+            "story": 50364336,
+            "title": "AI is forcing us to pay off 40 years of technical debt",
+            "comments": 750,
+            "people": 508,
+            "cap_two": 654,
+            "comments_rank": 4,
+            "people_rank": 6,
+            "cap_two_rank": 4,
+            "most_active_two": 15
+          },
+          {
+            "story": 50365982,
+            "title": "US voters roundly reject data centers in ballot measures",
+            "comments": 746,
+            "people": 364,
+            "cap_two": 514,
+            "comments_rank": 5,
+            "people_rank": 11,
+            "cap_two_rank": 8,
+            "most_active_two": 49
+          },
+          {
+            "story": 50378228,
+            "title": "sshole",
+            "comments": 742,
+            "people": 446,
+            "cap_two": 573,
+            "comments_rank": 6,
+            "people_rank": 7,
+            "cap_two_rank": 6,
+            "most_active_two": 30
+          },
+          {
+            "story": 50337608,
+            "title": "WTF Ubuntu?",
+            "comments": 688,
+            "people": 434,
+            "cap_two": 571,
+            "comments_rank": 7,
+            "people_rank": 8,
+            "cap_two_rank": 7,
+            "most_active_two": 17
+          },
+          {
+            "story": 50366117,
+            "title": "Ask HN: What's your current AI agentic setup?",
+            "comments": 682,
+            "people": 542,
+            "cap_two": 629,
+            "comments_rank": 8,
+            "people_rank": 4,
+            "cap_two_rank": 5,
+            "most_active_two": 20
+          },
+          {
+            "story": 50394906,
+            "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "comments": 604,
+            "people": 366,
+            "cap_two": 469,
+            "comments_rank": 9,
+            "people_rank": 10,
+            "cap_two_rank": 10,
+            "most_active_two": 38
+          },
+          {
+            "story": 50328251,
+            "title": "Mathematics has changed. Let's act like it",
+            "comments": 520,
+            "people": 279,
+            "cap_two": 379,
+            "comments_rank": 10,
+            "people_rank": 19,
+            "cap_two_rank": 17,
+            "most_active_two": 29
+          },
+          {
+            "story": 50312408,
+            "title": "Postgres 19 is late because so many more bugs are being found now",
+            "comments": 517,
+            "people": 330,
+            "cap_two": 419,
+            "comments_rank": 11,
+            "people_rank": 13,
+            "cap_two_rank": 13,
+            "most_active_two": 38
+          },
+          {
+            "story": 50385272,
+            "title": "Claude Code sends your email address to websites",
+            "comments": 514,
+            "people": 350,
+            "cap_two": 432,
+            "comments_rank": 12,
+            "people_rank": 12,
+            "cap_two_rank": 12,
+            "most_active_two": 16
+          },
+          {
+            "story": 50338726,
+            "title": "Ask HN: Who wants to be hired? (November 2026)",
+            "comments": 512,
+            "people": 511,
+            "cap_two": 512,
+            "comments_rank": 13,
+            "people_rank": 5,
+            "cap_two_rank": 9,
+            "most_active_two": 3
+          },
+          {
+            "story": 50354960,
+            "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+            "comments": 495,
+            "people": 367,
+            "cap_two": 448,
+            "comments_rank": 14,
+            "people_rank": 9,
+            "cap_two_rank": 11,
+            "most_active_two": 17
+          },
+          {
+            "story": 50353229,
+            "title": "Kalshi and its co-founders face felony charges for violating Utah gambling laws",
+            "comments": 493,
+            "people": 197,
+            "cap_two": 272,
+            "comments_rank": 15,
+            "people_rank": 42,
+            "cap_two_rank": 38,
+            "most_active_two": 46
+          },
+          {
+            "story": 50339397,
+            "title": "US boy names that became girl names and vice versa",
+            "comments": 475,
+            "people": 306,
+            "cap_two": 390,
+            "comments_rank": 16,
+            "people_rank": 16,
+            "cap_two_rank": 15,
+            "most_active_two": 18
+          },
+          {
+            "story": 50353192,
+            "title": "Google will turn off search for schools that reject AI",
+            "comments": 470,
+            "people": 275,
+            "cap_two": 356,
+            "comments_rank": 17,
+            "people_rank": 21,
+            "cap_two_rank": 20,
+            "most_active_two": 37
+          },
+          {
+            "story": 50335615,
+            "title": "Supermarket freezers across Europe hit by second suspected cyber-attack",
+            "comments": 454,
+            "people": 313,
+            "cap_two": 389,
+            "comments_rank": 18,
+            "people_rank": 15,
+            "cap_two_rank": 16,
+            "most_active_two": 14
+          },
+          {
+            "story": 50367653,
+            "title": "'It's just vape, nail, charity shops': Can anything save UK high street?",
+            "comments": 453,
+            "people": 237,
+            "cap_two": 319,
+            "comments_rank": 19,
+            "people_rank": 31,
+            "cap_two_rank": 27,
+            "most_active_two": 27
+          },
+          {
+            "story": 50389222,
+            "title": "Britain to make salary disclosure in job ads mandatory",
+            "comments": 453,
+            "people": 259,
+            "cap_two": 329,
+            "comments_rank": 20,
+            "people_rank": 26,
+            "cap_two_rank": 25,
+            "most_active_two": 22
+          }
+        ],
+        "people": [
+          {
+            "story": 50391456,
+            "title": "Tesla to wind down Cybertruck production",
+            "comments": 1988,
+            "people": 1064,
+            "cap_two": 1437,
+            "comments_rank": 1,
+            "people_rank": 1,
+            "cap_two_rank": 1,
+            "most_active_two": 42
+          },
+          {
+            "story": 50341174,
+            "title": "Astra can read and write weights to improve Qwen",
+            "comments": 899,
+            "people": 597,
+            "cap_two": 762,
+            "comments_rank": 2,
+            "people_rank": 2,
+            "cap_two_rank": 2,
+            "most_active_two": 19
+          },
+          {
+            "story": 50328896,
+            "title": "Ask HN: Which TV do you recommend for privacy?",
+            "comments": 885,
+            "people": 567,
+            "cap_two": 710,
+            "comments_rank": 3,
+            "people_rank": 3,
+            "cap_two_rank": 3,
+            "most_active_two": 35
+          },
+          {
+            "story": 50366117,
+            "title": "Ask HN: What's your current AI agentic setup?",
+            "comments": 682,
+            "people": 542,
+            "cap_two": 629,
+            "comments_rank": 8,
+            "people_rank": 4,
+            "cap_two_rank": 5,
+            "most_active_two": 20
+          },
+          {
+            "story": 50338726,
+            "title": "Ask HN: Who wants to be hired? (November 2026)",
+            "comments": 512,
+            "people": 511,
+            "cap_two": 512,
+            "comments_rank": 13,
+            "people_rank": 5,
+            "cap_two_rank": 9,
+            "most_active_two": 3
+          },
+          {
+            "story": 50364336,
+            "title": "AI is forcing us to pay off 40 years of technical debt",
+            "comments": 750,
+            "people": 508,
+            "cap_two": 654,
+            "comments_rank": 4,
+            "people_rank": 6,
+            "cap_two_rank": 4,
+            "most_active_two": 15
+          },
+          {
+            "story": 50378228,
+            "title": "sshole",
+            "comments": 742,
+            "people": 446,
+            "cap_two": 573,
+            "comments_rank": 6,
+            "people_rank": 7,
+            "cap_two_rank": 6,
+            "most_active_two": 30
+          },
+          {
+            "story": 50337608,
+            "title": "WTF Ubuntu?",
+            "comments": 688,
+            "people": 434,
+            "cap_two": 571,
+            "comments_rank": 7,
+            "people_rank": 8,
+            "cap_two_rank": 7,
+            "most_active_two": 17
+          },
+          {
+            "story": 50354960,
+            "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+            "comments": 495,
+            "people": 367,
+            "cap_two": 448,
+            "comments_rank": 14,
+            "people_rank": 9,
+            "cap_two_rank": 11,
+            "most_active_two": 17
+          },
+          {
+            "story": 50394906,
+            "title": "Anthropic IPO buyers see valuation as low as $1.1T",
+            "comments": 604,
+            "people": 366,
+            "cap_two": 469,
+            "comments_rank": 9,
+            "people_rank": 10,
+            "cap_two_rank": 10,
+            "most_active_two": 38
+          },
+          {
+            "story": 50365982,
+            "title": "US voters roundly reject data centers in ballot measures",
+            "comments": 746,
+            "people": 364,
+            "cap_two": 514,
+            "comments_rank": 5,
+            "people_rank": 11,
+            "cap_two_rank": 8,
+            "most_active_two": 49
+          },
+          {
+            "story": 50385272,
+            "title": "Claude Code sends your email address to websites",
+            "comments": 514,
+            "people": 350,
+            "cap_two": 432,
+            "comments_rank": 12,
+            "people_rank": 12,
+            "cap_two_rank": 12,
+            "most_active_two": 16
+          },
+          {
+            "story": 50312408,
+            "title": "Postgres 19 is late because so many more bugs are being found now",
+            "comments": 517,
+            "people": 330,
+            "cap_two": 419,
+            "comments_rank": 11,
+            "people_rank": 13,
+            "cap_two_rank": 13,
+            "most_active_two": 38
+          },
+          {
+            "story": 50319510,
+            "title": "HackerTube: YouTube built from videos recommended by HN",
+            "comments": 449,
+            "people": 327,
+            "cap_two": 396,
+            "comments_rank": 21,
+            "people_rank": 14,
+            "cap_two_rank": 14,
+            "most_active_two": 15
+          },
+          {
+            "story": 50335615,
+            "title": "Supermarket freezers across Europe hit by second suspected cyber-attack",
+            "comments": 454,
+            "people": 313,
+            "cap_two": 389,
+            "comments_rank": 18,
+            "people_rank": 15,
+            "cap_two_rank": 16,
+            "most_active_two": 14
+          },
+          {
+            "story": 50339397,
+            "title": "US boy names that became girl names and vice versa",
+            "comments": 475,
+            "people": 306,
+            "cap_two": 390,
+            "comments_rank": 16,
+            "people_rank": 16,
+            "cap_two_rank": 15,
+            "most_active_two": 18
+          },
+          {
+            "story": 50378942,
+            "title": "I wish tech companies knew more about me",
+            "comments": 413,
+            "people": 300,
+            "cap_two": 363,
+            "comments_rank": 26,
+            "people_rank": 17,
+            "cap_two_rank": 18,
+            "most_active_two": 24
+          },
+          {
+            "story": 50340088,
+            "title": "Show HN: Subvocal – Talk to your computer without making noise",
+            "comments": 395,
+            "people": 290,
+            "cap_two": 338,
+            "comments_rank": 30,
+            "people_rank": 18,
+            "cap_two_rank": 23,
+            "most_active_two": 47
+          },
+          {
+            "story": 50328251,
+            "title": "Mathematics has changed. Let's act like it",
+            "comments": 520,
+            "people": 279,
+            "cap_two": 379,
+            "comments_rank": 10,
+            "people_rank": 19,
+            "cap_two_rank": 17,
+            "most_active_two": 29
+          },
+          {
+            "story": 50365755,
+            "title": "North Korean fake job interview led to $6.3B Binance heist",
+            "comments": 384,
+            "people": 277,
+            "cap_two": 347,
+            "comments_rank": 32,
+            "people_rank": 20,
+            "cap_two_rank": 22,
+            "most_active_two": 13
+          }
+        ]
+      }
+    },
+    "week2": {
+      "matched_volume": [
+        {
+          "story": 50417407,
+          "title": "Ask HN: What are you working on? (November 2026)",
+          "comments": 964,
+          "people": 756,
+          "cap_two": 883,
+          "comments_rank": 6,
+          "people_rank": 4,
+          "cap_two_rank": 5,
+          "most_active_two": 19
+        },
+        {
+          "story": 50471731,
+          "title": "Service degradation on Microsoft 365",
+          "comments": 963,
+          "people": 617,
+          "cap_two": 802,
+          "comments_rank": 7,
+          "people_rank": 6,
+          "cap_two_rank": 6,
+          "most_active_two": 30
+        }
+      ],
+      "stories": 3177,
+      "comments": 74898,
+      "overlap": {
+        "10": {
+          "cap_two": 10,
+          "people": 10
+        },
+        "20": {
+          "cap_two": 18,
+          "people": 18
+        },
+        "50": {
+          "cap_two": 47,
+          "people": 45
+        }
+      },
+      "example": [
+        {
+          "story": 50429475,
+          "title": "Too many men suffering in silence, national health report finds",
+          "comments": 611,
+          "people": 261,
+          "cap_two": 378,
+          "comments_rank": 16,
+          "people_rank": 28,
+          "cap_two_rank": 22,
+          "most_active_two": 31
+        },
+        {
+          "story": 50410107,
+          "title": "Goodbye Claude, hello Pi",
+          "comments": 493,
+          "people": 362,
+          "cap_two": 448,
+          "comments_rank": 22,
+          "people_rank": 16,
+          "cap_two_rank": 17,
+          "most_active_two": 14
+        }
+      ],
+      "cutoff_scores": {
+        "comments": [
+          497,
+          496
+        ],
+        "people": [
+          321,
+          308
+        ],
+        "cap_two": [
+          414,
+          413
+        ]
+      },
+      "top20": {
+        "comments": [
+          {
+            "story": 50467087,
+            "title": "Jensen Huang resigns",
+            "comments": 3325,
+            "people": 1768,
+            "cap_two": 2400,
+            "comments_rank": 1,
+            "people_rank": 1,
+            "cap_two_rank": 1,
+            "most_active_two": 69
+          },
+          {
+            "story": 50459703,
+            "title": "Nvidia is preparing to oust Jensen Huang",
+            "comments": 1622,
+            "people": 929,
+            "cap_two": 1247,
+            "comments_rank": 2,
+            "people_rank": 2,
+            "cap_two_rank": 2,
+            "most_active_two": 32
+          },
+          {
+            "story": 50418016,
+            "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+            "comments": 1293,
+            "people": 732,
+            "cap_two": 1003,
+            "comments_rank": 3,
+            "people_rank": 5,
+            "cap_two_rank": 3,
+            "most_active_two": 25
+          },
+          {
+            "story": 50489641,
+            "title": "FAA issues national ground stop – lifted 4.5 hours later",
+            "comments": 1220,
+            "people": 761,
+            "cap_two": 990,
+            "comments_rank": 4,
+            "people_rank": 3,
+            "cap_two_rank": 4,
+            "most_active_two": 33
+          },
+          {
+            "story": 50418975,
+            "title": "I'm not convinced the AI bubble exists",
+            "comments": 975,
+            "people": 577,
+            "cap_two": 756,
+            "comments_rank": 5,
+            "people_rank": 8,
+            "cap_two_rank": 8,
+            "most_active_two": 27
+          },
+          {
+            "story": 50417407,
+            "title": "Ask HN: What are you working on? (November 2026)",
+            "comments": 964,
+            "people": 756,
+            "cap_two": 883,
+            "comments_rank": 6,
+            "people_rank": 4,
+            "cap_two_rank": 5,
+            "most_active_two": 19
+          },
+          {
+            "story": 50471731,
+            "title": "Service degradation on Microsoft 365",
+            "comments": 963,
+            "people": 617,
+            "cap_two": 802,
+            "comments_rank": 7,
+            "people_rank": 6,
+            "cap_two_rank": 6,
+            "most_active_two": 30
+          },
+          {
+            "story": 50465829,
+            "title": "Anthropic IPO",
+            "comments": 916,
+            "people": 585,
+            "cap_two": 759,
+            "comments_rank": 8,
+            "people_rank": 7,
+            "cap_two_rank": 7,
+            "most_active_two": 19
+          },
+          {
+            "story": 50429068,
+            "title": "Claude Fable 5.2 and Mythos 5.2",
+            "comments": 842,
+            "people": 544,
+            "cap_two": 678,
+            "comments_rank": 9,
+            "people_rank": 9,
+            "cap_two_rank": 9,
+            "most_active_two": 39
+          },
+          {
+            "story": 50458900,
+            "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "comments": 706,
+            "people": 439,
+            "cap_two": 572,
+            "comments_rank": 10,
+            "people_rank": 10,
+            "cap_two_rank": 10,
+            "most_active_two": 20
+          },
+          {
+            "story": 50477231,
+            "title": "Nvidia employees petition to bring back Jensen Huang",
+            "comments": 680,
+            "people": 392,
+            "cap_two": 516,
+            "comments_rank": 11,
+            "people_rank": 13,
+            "cap_two_rank": 12,
+            "most_active_two": 28
+          },
+          {
+            "story": 50484658,
+            "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+            "comments": 664,
+            "people": 397,
+            "cap_two": 518,
+            "comments_rank": 12,
+            "people_rank": 12,
+            "cap_two_rank": 11,
+            "most_active_two": 21
+          },
+          {
+            "story": 50438318,
+            "title": "AI usage generates a fragile codebase",
+            "comments": 626,
+            "people": 398,
+            "cap_two": 511,
+            "comments_rank": 13,
+            "people_rank": 11,
+            "cap_two_rank": 13,
+            "most_active_two": 21
+          },
+          {
+            "story": 50444129,
+            "title": "Starlink Mini 2",
+            "comments": 624,
+            "people": 341,
+            "cap_two": 459,
+            "comments_rank": 14,
+            "people_rank": 17,
+            "cap_two_rank": 15,
+            "most_active_two": 28
+          },
+          {
+            "story": 50493251,
+            "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+            "comments": 613,
+            "people": 372,
+            "cap_two": 483,
+            "comments_rank": 15,
+            "people_rank": 14,
+            "cap_two_rank": 14,
+            "most_active_two": 27
+          },
+          {
+            "story": 50429475,
+            "title": "Too many men suffering in silence, national health report finds",
+            "comments": 611,
+            "people": 261,
+            "cap_two": 378,
+            "comments_rank": 16,
+            "people_rank": 28,
+            "cap_two_rank": 22,
+            "most_active_two": 31
+          },
+          {
+            "story": 50446520,
+            "title": "Apple has new Mac app coming to make running local AI models easy",
+            "comments": 561,
+            "people": 308,
+            "cap_two": 413,
+            "comments_rank": 17,
+            "people_rank": 21,
+            "cap_two_rank": 21,
+            "most_active_two": 54
+          },
+          {
+            "story": 50459321,
+            "title": "Jensen Huang said to have had relationship with executive who reports to him",
+            "comments": 538,
+            "people": 327,
+            "cap_two": 423,
+            "comments_rank": 18,
+            "people_rank": 19,
+            "cap_two_rank": 18,
+            "most_active_two": 21
+          },
+          {
+            "story": 50422069,
+            "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+            "comments": 520,
+            "people": 364,
+            "cap_two": 451,
+            "comments_rank": 19,
+            "people_rank": 15,
+            "cap_two_rank": 16,
+            "most_active_two": 17
+          },
+          {
+            "story": 50415628,
+            "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "comments": 497,
+            "people": 332,
+            "cap_two": 417,
+            "comments_rank": 20,
+            "people_rank": 18,
+            "cap_two_rank": 19,
+            "most_active_two": 16
+          }
+        ],
+        "people": [
+          {
+            "story": 50467087,
+            "title": "Jensen Huang resigns",
+            "comments": 3325,
+            "people": 1768,
+            "cap_two": 2400,
+            "comments_rank": 1,
+            "people_rank": 1,
+            "cap_two_rank": 1,
+            "most_active_two": 69
+          },
+          {
+            "story": 50459703,
+            "title": "Nvidia is preparing to oust Jensen Huang",
+            "comments": 1622,
+            "people": 929,
+            "cap_two": 1247,
+            "comments_rank": 2,
+            "people_rank": 2,
+            "cap_two_rank": 2,
+            "most_active_two": 32
+          },
+          {
+            "story": 50489641,
+            "title": "FAA issues national ground stop – lifted 4.5 hours later",
+            "comments": 1220,
+            "people": 761,
+            "cap_two": 990,
+            "comments_rank": 4,
+            "people_rank": 3,
+            "cap_two_rank": 4,
+            "most_active_two": 33
+          },
+          {
+            "story": 50417407,
+            "title": "Ask HN: What are you working on? (November 2026)",
+            "comments": 964,
+            "people": 756,
+            "cap_two": 883,
+            "comments_rank": 6,
+            "people_rank": 4,
+            "cap_two_rank": 5,
+            "most_active_two": 19
+          },
+          {
+            "story": 50418016,
+            "title": "Nvidia CEO Jensen Huang's letter to staff about affair",
+            "comments": 1293,
+            "people": 732,
+            "cap_two": 1003,
+            "comments_rank": 3,
+            "people_rank": 5,
+            "cap_two_rank": 3,
+            "most_active_two": 25
+          },
+          {
+            "story": 50471731,
+            "title": "Service degradation on Microsoft 365",
+            "comments": 963,
+            "people": 617,
+            "cap_two": 802,
+            "comments_rank": 7,
+            "people_rank": 6,
+            "cap_two_rank": 6,
+            "most_active_two": 30
+          },
+          {
+            "story": 50465829,
+            "title": "Anthropic IPO",
+            "comments": 916,
+            "people": 585,
+            "cap_two": 759,
+            "comments_rank": 8,
+            "people_rank": 7,
+            "cap_two_rank": 7,
+            "most_active_two": 19
+          },
+          {
+            "story": 50418975,
+            "title": "I'm not convinced the AI bubble exists",
+            "comments": 975,
+            "people": 577,
+            "cap_two": 756,
+            "comments_rank": 5,
+            "people_rank": 8,
+            "cap_two_rank": 8,
+            "most_active_two": 27
+          },
+          {
+            "story": 50429068,
+            "title": "Claude Fable 5.2 and Mythos 5.2",
+            "comments": 842,
+            "people": 544,
+            "cap_two": 678,
+            "comments_rank": 9,
+            "people_rank": 9,
+            "cap_two_rank": 9,
+            "most_active_two": 39
+          },
+          {
+            "story": 50458900,
+            "title": "United Airlines bans AI agents from booking flights on behalf of travelers",
+            "comments": 706,
+            "people": 439,
+            "cap_two": 572,
+            "comments_rank": 10,
+            "people_rank": 10,
+            "cap_two_rank": 10,
+            "most_active_two": 20
+          },
+          {
+            "story": 50438318,
+            "title": "AI usage generates a fragile codebase",
+            "comments": 626,
+            "people": 398,
+            "cap_two": 511,
+            "comments_rank": 13,
+            "people_rank": 11,
+            "cap_two_rank": 13,
+            "most_active_two": 21
+          },
+          {
+            "story": 50484658,
+            "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
+            "comments": 664,
+            "people": 397,
+            "cap_two": 518,
+            "comments_rank": 12,
+            "people_rank": 12,
+            "cap_two_rank": 11,
+            "most_active_two": 21
+          },
+          {
+            "story": 50477231,
+            "title": "Nvidia employees petition to bring back Jensen Huang",
+            "comments": 680,
+            "people": 392,
+            "cap_two": 516,
+            "comments_rank": 11,
+            "people_rank": 13,
+            "cap_two_rank": 12,
+            "most_active_two": 28
+          },
+          {
+            "story": 50493251,
+            "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+            "comments": 613,
+            "people": 372,
+            "cap_two": 483,
+            "comments_rank": 15,
+            "people_rank": 14,
+            "cap_two_rank": 14,
+            "most_active_two": 27
+          },
+          {
+            "story": 50422069,
+            "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
+            "comments": 520,
+            "people": 364,
+            "cap_two": 451,
+            "comments_rank": 19,
+            "people_rank": 15,
+            "cap_two_rank": 16,
+            "most_active_two": 17
+          },
+          {
+            "story": 50410107,
+            "title": "Goodbye Claude, hello Pi",
+            "comments": 493,
+            "people": 362,
+            "cap_two": 448,
+            "comments_rank": 22,
+            "people_rank": 16,
+            "cap_two_rank": 17,
+            "most_active_two": 14
+          },
+          {
+            "story": 50444129,
+            "title": "Starlink Mini 2",
+            "comments": 624,
+            "people": 341,
+            "cap_two": 459,
+            "comments_rank": 14,
+            "people_rank": 17,
+            "cap_two_rank": 15,
+            "most_active_two": 28
+          },
+          {
+            "story": 50415628,
+            "title": "Goldman Sachs is pulling Claude Code from its bankers and traders",
+            "comments": 497,
+            "people": 332,
+            "cap_two": 417,
+            "comments_rank": 20,
+            "people_rank": 18,
+            "cap_two_rank": 19,
+            "most_active_two": 16
+          },
+          {
+            "story": 50459321,
+            "title": "Jensen Huang said to have had relationship with executive who reports to him",
+            "comments": 538,
+            "people": 327,
+            "cap_two": 423,
+            "comments_rank": 18,
+            "people_rank": 19,
+            "cap_two_rank": 18,
+            "most_active_two": 21
+          },
+          {
+            "story": 50473190,
+            "title": "Former Nvidia CEO Huang had a relationship with a second employee, sources say",
+            "comments": 496,
+            "people": 321,
+            "cap_two": 414,
+            "comments_rank": 21,
+            "people_rank": 20,
+            "cap_two_rank": 20,
+            "most_active_two": 16
+          }
+        ]
+      }
+    }
+  }
+}
