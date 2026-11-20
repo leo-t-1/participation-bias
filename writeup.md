@@ -1,28 +1,20 @@
-**Short answer.** By itself the bias explains one thing: what you read over-represents prolific posters. It explains anything further (hostile tone, skewed opinion) only where posting rate correlates with that trait, which has to be measured. In my data that held for some traits and failed for others. I model it as size-biased sampling of people by posting rate.
+**Short answer.** Read as a statement about acts, the sentence is empty: the people who post are the people who post. Read as a statement about dispositions, it is an empirical claim: speaking up is a stable trait of a person, not a response to the situation. If that is true, public discourse is not a sample of the public. It is a record of one type of person. By itself this explains only that prolific speakers are over-represented. It explains more exactly when the disposition to speak correlates with something else.
 
-**Reading the sentence.** It links an act (posting now) to a disposition (being someone who posts). It is only "near" tautological because it makes an empirical claim: participation is driven mainly by who you are, not by the situation.
+**Model.** Give each person a posting rate p and any trait t (an opinion, tone, expertise). A reader samples posts, not people, so person i is weighted by p_i:
 
-**Model.** Give each person a posting rate p and any trait t (opinion, tone, expertise). A reader samples posts, not people, so person i is weighted by p_i:
+  mean of t over posts = E[t] + Cov(p, t)/E[p]
 
-  mean of t over posts = E[p·t]/E[p] = E[t] + Cov(p, t)/E[p]
-
-Setting t = p gives the author of a random post a rate of E[p] + Var(p)/E[p] (size-biased sampling). If Cov(p, t) = 0, discourse is a fair sample however concentrated it is.
-
-**Test.** I fixed hypotheses first, then took every Hacker News comment from 1-14 Nov 2026 (144,483 comments, 26,624 users; rate from week 1, traits from week 2).
-
-- Concentration: supported. A random commenter wrote 5.4 comments; the author of a random comment wrote 35.9.
-- Disposition: supported, but situation matters too. Commenting again in week 2 rises from 31% (one comment in week 1) to 98% (25+), and activity on non-AI threads predicts commenting on AI threads (13% to 88%). Yet users with exactly two comments spread them over both weeks only 31% of the time (50% by chance). So p is a stable baseline times topical bursts.
-- Tone: partly. Replies are 77% of comments but 66% for the average commenter. LLM-rated hostility, blind to author, rises from 6% (silent in week 1) to 19% (25+).
-- Opinion: two LLM judges rated stance on AI for 1,800 comments. Heavy posters are not more extreme (hypothesis failed) but, exploratory, more sceptical (mean -0.05 to -0.62 on a -3 to 3 scale).
-
-**X.** A public keyword-collected corpus (72M posts, 8.9M accounts, 2026; not a random sample) shows the same disposition: reappearing in May-July rises from 43% (one captured post in January-April) to 97% (26+). But the heavy tail is partly not people: in LLM ratings of 2,400 accounts, organisations and bots rise from 8% to 38%. Among individuals, neither hostility nor political extremity rises with rate (both hypotheses failed). Pew, matching surveys to accounts: strong Trump disapprovers were 55% of US adult users but wrote 72% of tweets on national politics.
+Setting t = p gives the tautology itself: the author of a random post posts at E[p] + Var(p)/E[p], more than the average person whenever rates differ. For every other trait the gap is a covariance, and its sign is open. Concentration alone tells you nothing: if Cov(p, t) = 0, a discourse written by 1% of people is still a fair sample of t. I would model p as a stable personal baseline times topical interest, with the silent (p = 0) as the largest group.
 
 **What it explains.**
 
-1. Misjudging the population when Cov(p, t) is not zero: Hacker News reads as more hostile and AI-sceptical than its users, political Twitter as more anti-Trump.
-2. Spurious trade-offs (collider bias). Simulate independent expertise and conviction, and let the top 10% by expertise + conviction + noise post: among posters the two correlate at -0.38. Confident people look less informed with no real link.
-3. Anything calibrated on posts inherits the p-weighting: sentiment "polls", LLM training data.
+1. The gap between discourse and public opinion. Whatever travels with the urge to speak looks more common than it is, so readers misjudge what others think.
+2. Why debates on different topics feel alike: they are held by the same people.
+3. Spurious patterns among speakers. If either expertise or conviction gets you to post, the two are negatively correlated among posters even when independent in the population (collider bias; r = -0.38 in my simulation). "The loudest know least" can be pure selection.
+4. Anything calibrated on posts inherits the weighting: sentiment "polls", a politician's sense of the mood, LLM training data.
 
-**What it does not explain.** Why p correlates with a trait. It also does not imply polarisation: my extremity hypothesis failed on both platforms. Algorithmic amplification is a separate reweighting on top. Limits: lurkers are invisible; LLM ratings are unvalidated.
+**What it does not explain.** Which traits correlate with p, or why. Polarisation does not follow. Algorithmic amplification is a second reweighting on top. And selection can feed back: if a harsh tone drives moderates out, p itself changes, which a static model misses.
 
-Code and figures: https://github.com/leo-t-1/participation-bias
+**Evidence** (hypotheses fixed before looking; figures and code in the link). On Hacker News (144,483 comments, two weeks) the disposition is real and topic-general: the chance of commenting again next week rises from 31% to 98% with prior activity, and activity on non-AI threads predicts showing up on AI threads (13% to 88%). The author of a random comment wrote 35.9 comments, a random commenter 5.4. The covariance was trait-specific: heavy posters were more hostile (6% to 19% of comments, LLM-rated) and more AI-sceptical, but not more extreme, which I had predicted. In a 72M-post X corpus the disposition replicates (43% to 97%), but individuals who post more were neither more hostile nor more politically extreme, and the heavy tail is increasingly organisations and bots (8% to 38%). Pew's matched survey data shows a case where it bites: strong Trump disapprovers were 55% of US adult Twitter users and wrote 72% of political tweets.
+
+Code, data and figures: https://github.com/leo-t-1/participation-bias

@@ -1,5 +1,10 @@
 # Participation bias in public discourse
 
+![Summary of results](results/summary.png)
+
+The write-up is in [`writeup.md`](writeup.md). Panels A-D use every Hacker News comment from 1-14 Nov 2026; A, B, C and E use a public X corpus
+(not a random sample); F is a simulation. Rebuild the figure with `python3 summary_fig.py results`.
+
 [One-page write-up](writeup.md) · [X corpus and sampling methods](x_corpus/README.md) · [Thread breadth comparison](breadth_experiment/results.json)
 
 Code and figures for a short write-up on the question: people who participate in public discourse tend to be
