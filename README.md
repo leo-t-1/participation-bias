@@ -28,7 +28,12 @@ expertise + conviction + noise passes a threshold. Among posters the two become 
 Optional: `python3 llm_rate.py data results .env <model>` rates 1,500 comments for hostility and assertiveness with an
 LLM, blind to author (needs `OPENAI_API_KEY` in `.env`, see `.env.example`).
 
+## LLM-rated checks (gpt-5.4-mini, blind to author)
+
+- Tone (`llm_rate.py`, 1,500 comments): share rated dismissive or hostile rises from 6% (no week-1 comments) to 19% (25+ week-1 comments). Results: `results/llm_validation.json`.
+- Stance on AI (`stance_rate.py`, 1,800 comments on AI threads, -3 to 3): the pre-stated hypothesis that heavy posters are more extreme was not supported (Spearman rho = -0.01 for |stance|). Exploratory: heavy posters are more sceptical (mean stance 0.03 to -0.47). Results: `results/stance.json`.
+
 ## Limits
 
-Lurkers are invisible, so true concentration is larger. Traits are tone and style from word lists and VADER, not opinions.
+Lurkers are invisible, so true concentration is larger. Word-list and VADER traits are crude; LLM ratings are not human-validated.
 Hacker News is not X.
