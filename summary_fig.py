@@ -68,11 +68,11 @@ a.set_title("E  On X the heavy tail is partly not people")
 a = ax[5]; rng = np.random.default_rng(0); N = 200_000
 e_, c_ = rng.standard_normal(N), rng.standard_normal(N); s = e_ + c_ + rng.standard_normal(N); m = s > np.quantile(s, 0.9)
 i = rng.choice(N, 5000, replace=False)
-a.scatter(e_[i][~m[i]], c_[i][~m[i]], s=5, c="#c9cdd2", label="silent (90%)", linewidths=0)
+a.scatter(e_[i][~m[i]], c_[i][~m[i]], s=5, c="#c9cdd2", label="silent (90%), simulated", linewidths=0)
 a.scatter(e_[i][m[i]], c_[i][m[i]], s=9, c=X, label="posters (10%)", linewidths=0)
 a.set_xlabel("expertise"); a.set_ylabel("conviction"); a.legend(frameon=False, fontsize=11, loc="lower left", markerscale=2.5)
 a.text(0.98, 0.97, "population r = %.2f\namong posters r = %.2f" % (abs(col["population_corr"]), col["top10_example"]["corr"]), transform=a.transAxes, ha="right", va="top", fontsize=11.5, bbox=dict(facecolor="white", edgecolor="none", alpha=0.85))
-a.set_title("F  Simulation: selection fakes a trade-off")
+a.set_title("F  Selection fakes a trade-off")
 
 fig.suptitle("What you read = what people think + Cov(posting rate, trait) / mean posting rate", fontsize=16, fontweight="bold", x=0.01, ha="left")
 fig.text(0.01, 0.005, "Hacker News: all 144,483 comments, 1-14 Nov 2026. X: SinclairSchneider/tweets_sample_2026 (keyword-collected, not a random sample). Error bars: standard errors.", fontsize=10, color="#555555")
