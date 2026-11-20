@@ -1,6 +1,6 @@
 """Collider (selection) simulation. Expertise and conviction are independent in the population.
 A person posts if expertise + conviction + noise > threshold. Among posters they become negatively correlated.
-python3 collider_sim.py results"""
+python3 simulation/collider_sim.py results"""
 import sys, json, os, numpy as np, matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
 OUT = sys.argv[1]; rng = np.random.default_rng(0); N = 200_000
 e, c = rng.standard_normal(N), rng.standard_normal(N)

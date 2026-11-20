@@ -4,7 +4,7 @@ from pathlib import Path
 import json
 
 HERE = Path(__file__).resolve().parent
-DATA = HERE.parent / "data"
+DATA = HERE.parent.parent / "data"
 
 
 def read_days():

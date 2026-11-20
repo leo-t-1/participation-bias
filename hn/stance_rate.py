@@ -1,7 +1,7 @@
 """Stance experiment. Hypothesis (fixed before running): on AI threads, heavier posters hold more extreme
 stances on AI (further from neutral) than light posters. Posting rate = week-1 comments (all topics);
 stance = LLM rating of one week-2 comment on an AI thread per user, blind to author.
-python3 stance_rate.py data results .env <model>"""
+python3 hn/stance_rate.py data results .env <model>"""
 import json, glob, re, html, sys, os, collections, urllib.request, random
 import numpy as np
 from scipy import stats

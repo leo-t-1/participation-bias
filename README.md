@@ -45,30 +45,31 @@ Hypotheses were written down before each analysis. Failed predictions are report
 **Simulation** - expertise and conviction independent in the population; the top 10% by expertise + conviction + noise post.
 Among posters the two correlate at -0.38 (collider bias).
 
-## Files
+## Layout
 
-| Path | What it does |
+| Path | What it holds |
 |---|---|
-| `fetch.py`, `analyze.py`, `robust_fig.py` | Download the Hacker News comments, run the main tests, robustness checks. Output: `results/results.json`, `results/robustness.json`, `results/participation_bias_hn.png` |
-| `llm_rate.py` | LLM tone ratings on Hacker News. Output: `results/llm_validation.json` |
-| `stance_rate.py` | LLM stance-on-AI ratings, two judges. Output: `results/stance_*.json` |
-| `collider_sim.py` | Collider simulation. Output: `results/collider.json`, `results/collider_sim.png` |
-| `x_corpus/` | Full-corpus X counts, weighting and a second, independent LLM-rated sample. See [`x_corpus/README.md`](x_corpus/README.md) |
-| `x_llm.py` | LLM-rated account type, tone and political stance on three X shards. Output: `results/x_llm_gpt-4.1.json` |
-| `xpass1.py`, `xpass2.py` | First-pass word-list analysis of three X shards (`results/x_results.json`). Superseded by the full-corpus counts. |
-| `breadth_experiment/` | Thread-breadth comparison on Hacker News |
+| [`writeup.md`](writeup.md) | The one-page answer |
+| [`results/`](results) | Every number behind the write-up as JSON, plus the figures |
+| [`hn/`](hn) | Hacker News: `fetch.py` (download), `analyze.py` (main tests), `robust_fig.py` (robustness), `llm_rate.py` (LLM tone ratings), `stance_rate.py` (LLM stance on AI, two judges), `breadth_experiment/` (thread breadth) |
+| [`x_corpus/`](x_corpus) | X: full-corpus counts and weighting (see its [README](x_corpus/README.md)), `x_llm.py` (LLM-rated account type, tone and political stance), `xpass1.py` and `xpass2.py` (first-pass word-list analysis, superseded by the full-corpus counts) |
+| [`simulation/`](simulation) | `collider_sim.py`, the collider simulation |
 | `summary_fig.py` | Builds the summary figure above |
 
 ## Reproduce
 
+Run from the repository root.
+
     pip install -r requirements.txt
-    python3 fetch.py data               # about 1 minute, 180 MB
-    python3 analyze.py data results
-    python3 robust_fig.py data results
-    python3 collider_sim.py results
+    python3 hn/fetch.py data                    # about 1 minute, 180 MB
+    python3 hn/analyze.py data results
+    python3 hn/robust_fig.py data results
+    python3 simulation/collider_sim.py results
     python3 summary_fig.py results
 
-The LLM-rated steps need `OPENAI_API_KEY` in `.env` (see `.env.example`). Raw comments, raw X posts, handles and per-post X ratings are not in this repository.
+The LLM-rated steps (`hn/llm_rate.py`, `hn/stance_rate.py`, `x_corpus/x_llm.py`, `x_corpus/rate.py`) need `OPENAI_API_KEY` in `.env`
+(see `.env.example`). The X steps are described in [`x_corpus/README.md`](x_corpus/README.md).
+Raw comments, raw X posts, handles and per-post X ratings are not in this repository.
 
 ## Limits
 

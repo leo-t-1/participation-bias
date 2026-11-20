@@ -6,7 +6,7 @@ Hypotheses, written before running:
   X2  Among individual people, hostility rises with posting rate (as on Hacker News).
   X3  Among individual people posting about politics, stance extremity (|left-right stance|) rises with posting rate.
 
-python3 x_llm.py xdata results .env <model> [accounts_per_bin]
+python3 x_corpus/x_llm.py xdata results .env <model> [accounts_per_bin]
 """
 import json, re, sys, os, urllib.request, collections
 import numpy as np, duckdb

@@ -17,7 +17,7 @@ The judge marked opposition in 328/600 posts sampled directly and 331/600 posts 
 From the repository root in a Python 3.13 environment with DuckDB, PyArrow, requests and vaderSentiment installed:
 
 1. Run `python x_corpus/count.py` to retrieve the date, handle, retweet and reply fields across 73 shards and build local per-handle counts. Downloads are pinned to revision `254bbe4cea800035ec544cf047d8b3bebc24fe99`. Completed shards are cached. Run `python x_corpus/weights.py` for the exact post-versus-account contrast.
-2. Run `python x_corpus/text_shards.py` to fetch and checksum shards 0, 24 and 48. To reproduce the earlier three-shard lexical analysis, install NumPy and vaderSentiment and run `python xpass2.py xdata results`.
+2. Run `python x_corpus/text_shards.py` to fetch and checksum shards 0, 24 and 48. To reproduce the earlier three-shard lexical analysis, install NumPy and vaderSentiment and run `python x_corpus/xpass2.py xdata results`.
 3. Run `python x_corpus/rate.py` for the exploratory text experiments (paid OpenAI API, GPT-4.1). A key may be supplied in the environment or a local .env file. The raw samples, handles and cached model labels stay in the ignored xdata directory. The public output contains aggregate counts. Future model calls can differ.
 4. Run `python x_corpus/audit_hn.py` to compare the two previously saved HN judges without making API calls.
 
