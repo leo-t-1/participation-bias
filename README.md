@@ -1,66 +1,77 @@
 # Participation bias in public discourse
 
+Question: in public discourse, people who participate tend to be the kind of people who tend to participate.
+What (if anything) does this explain, and how would you model it?
+
+The one-page answer is in [`writeup.md`](writeup.md). This repository holds the evidence behind it.
+
 ![Summary of results](results/summary.png)
 
-The write-up is in [`writeup.md`](writeup.md). Panels A-D use every Hacker News comment from 1-14 Nov 2026; A, B, C and E use a public X corpus
-(not a random sample); F is a simulation. Rebuild the figure with `python3 summary_fig.py results`.
+## Model
 
-[One-page write-up](writeup.md) · [X corpus and sampling methods](x_corpus/README.md) · [Thread breadth comparison](breadth_experiment/results.json)
-
-Code and figures for a short write-up on the question: people who participate in public discourse tend to be
-the kind of people who tend to participate. What does this explain, and how would you model it?
-
-**Model.** Each person has a posting rate p and a trait t. A reader samples posts, not people, so
+Each person has a posting rate p and a trait t. A reader samples posts, not people, so
 
     mean of t over posts = E[p*t]/E[p] = E[t] + Cov(p, t)/E[p]
 
-**Data.** Every Hacker News comment from 1-14 Nov 2026 (144,483 comments, 26,624 users), from the public Algolia HN API.
-Posting rate is measured in week 1, text traits in week 2. Hypotheses were fixed before looking at the data.
+With t = p this is size-biased sampling: the author of a random post posts at E[p] + Var(p)/E[p].
+For any other trait the gap is a covariance that has to be measured.
 
-![Hacker News results](results/participation_bias_hn.png)
+## Results
 
-**Simulation.** Expertise and conviction are independent in the population; a person posts if
-expertise + conviction + noise passes a threshold. Among posters the two become negatively correlated (collider bias).
+Hypotheses were written down before each analysis. Failed predictions are reported as failed.
 
-![Collider simulation](results/collider_sim.png)
+**Hacker News** - every comment from 1-14 Nov 2026 (144,483 comments, 26,624 users). Rate from week 1, traits from week 2.
 
-## Run
+| Claim | Result |
+|---|---|
+| Posting is concentrated | Supported. A random commenter wrote 5.4 comments, the author of a random comment 35.9. Top 10% wrote 57%. |
+| Posting is a stable, topic-general disposition | Supported. Commenting again in week 2: 31% (1 comment in week 1) to 98% (25+). Joining an AI thread, by earlier non-AI activity: 13% to 88%. |
+| ...but situation matters too | Users with exactly two comments spread them over both weeks 31% of the time (50% by chance). |
+| Heavy posters reply more | Supported. Replies are 77% of comments, 66% for the average commenter. |
+| Heavy posters hedge less | Not supported (0.73 vs 0.73 hedging words per 100). |
+| Heavy posters are more hostile | Supported (LLM-rated, blind to author, 1,500 comments): 6% to 19% rated dismissive or hostile. |
+| Heavy posters hold more extreme views on AI | Not supported (two LLM judges, 1,800 comments; no robust trend in distance from neutral). |
+| Exploratory: heavy posters are more AI-sceptical | Mean stance -0.11 to -0.74 (gpt-4.1) and 0.01 to -0.41 (gpt-5.4-mini) on a -3 to 3 scale. |
+
+**X** - [SinclairSchneider/tweets_sample_2026](https://huggingface.co/datasets/SinclairSchneider/tweets_sample_2026), a keyword-collected corpus. It is not a random sample of X.
+
+| Claim | Result |
+|---|---|
+| Same disposition | Full corpus (72M posts, 8.9M accounts): captured again in May-July rises from 43% (one post in Jan-Apr) to 97% (26+). |
+| Heavy accounts are less often individual people | Supported (LLM-classified, 2,400 accounts, three shards): organisations and automated accounts rise from 8% to 38%. |
+| Among individuals, hostility rises with rate | Not supported (rho = -0.01). |
+| Among individuals posting about politics, extremity rises with rate | Not supported (rho = -0.05). |
+
+**Simulation** - expertise and conviction independent in the population; the top 10% by expertise + conviction + noise post.
+Among posters the two correlate at -0.38 (collider bias).
+
+## Files
+
+| Path | What it does |
+|---|---|
+| `fetch.py`, `analyze.py`, `robust_fig.py` | Download the Hacker News comments, run the main tests, robustness checks. Output: `results/results.json`, `results/robustness.json`, `results/participation_bias_hn.png` |
+| `llm_rate.py` | LLM tone ratings on Hacker News. Output: `results/llm_validation.json` |
+| `stance_rate.py` | LLM stance-on-AI ratings, two judges. Output: `results/stance_*.json` |
+| `collider_sim.py` | Collider simulation. Output: `results/collider.json`, `results/collider_sim.png` |
+| `x_corpus/` | Full-corpus X counts, weighting and a second, independent LLM-rated sample. See [`x_corpus/README.md`](x_corpus/README.md) |
+| `x_llm.py` | LLM-rated account type, tone and political stance on three X shards. Output: `results/x_llm_gpt-4.1.json` |
+| `xpass1.py`, `xpass2.py` | First-pass word-list analysis of three X shards (`results/x_results.json`). Superseded by the full-corpus counts. |
+| `breadth_experiment/` | Thread-breadth comparison on Hacker News |
+| `summary_fig.py` | Builds the summary figure above |
+
+## Reproduce
 
     pip install -r requirements.txt
-    python3 fetch.py data               # downloads the comments (about 1 minute, 180 MB)
-    python3 analyze.py data results     # H1-H3 -> results/results.json
-    python3 robust_fig.py data results  # robustness checks and the figure
-    python3 collider_sim.py results     # collider simulation
+    python3 fetch.py data               # about 1 minute, 180 MB
+    python3 analyze.py data results
+    python3 robust_fig.py data results
+    python3 collider_sim.py results
+    python3 summary_fig.py results
 
-Optional: `python3 llm_rate.py data results .env <model>` rates 1,500 comments for hostility and assertiveness with an
-LLM, blind to author (needs `OPENAI_API_KEY` in `.env`, see `.env.example`).
-
-## LLM-rated checks (gpt-5.4-mini, blind to author)
-
-- Tone (`llm_rate.py`, 1,500 comments): share rated dismissive or hostile rises from 6% (no week-1 comments) to 19% (25+ week-1 comments). Results: `results/llm_validation.json`.
-- Stance on AI (`stance_rate.py`, 1,800 comments on AI threads, -3 to 3, two judges: gpt-5.4-mini and gpt-4.1).
-  The judges agree well where both see a stance (n = 1,247: Spearman 0.80, same sign in 92% of non-neutral cases).
-  gpt-5.4-mini mostly scores no-view comments as 0 (37% zeros, 10% null); gpt-4.1 uses null more (21% zeros, 30% null).
-  - Pre-stated hypothesis, heavy posters are more extreme: not supported. Spearman rho of posting-rate bin vs |stance| is
-    0.00 (gpt-5.4-mini), 0.06 (gpt-4.1, p = 0.04), 0.03 (mean of both judges, p = 0.23).
-  - Exploratory: heavy posters are more sceptical under both judges. Mean stance from lightest to heaviest bin:
-    0.03 to -0.47 (gpt-5.4-mini, first run), -0.11 to -0.74 (gpt-4.1), -0.05 to -0.62 (mean of both, rho = -0.15).
-  - Results: `results/stance*.json`; every rating: `results/stance_ratings_*.json`.
-
-## X sample (SinclairSchneider/tweets_sample_2026 on Hugging Face)
-
-A keyword-collected corpus, not a random sample of X. Full-corpus counts and the account-weighting analysis are in `x_corpus/`
-(see its README). `x_llm.py` is a separate LLM-rated test on three shards (gpt-4.1, 400 accounts per posting-rate bin,
-hypotheses written in the script before running). Results: `results/x_llm_gpt-4.1.json`.
-
-- X1, heavy accounts are less often individual people: supported. Organisations and automated accounts rise from 8% (no posts
-  captured in Jan-Apr) to 38% (26+ captured posts).
-- X2, among individuals hostility rises with posting rate: not supported (Spearman rho = -0.01, p = 0.74).
-- X3, among individuals posting about politics, stance extremity rises with posting rate: not supported (rho = -0.05, p = 0.05).
-
-Posting-rate bins come from three of 73 shards, so they are thinned counts. Raw posts, handles and per-post ratings are not in this repo.
+The LLM-rated steps need `OPENAI_API_KEY` in `.env` (see `.env.example`). Raw comments, raw X posts, handles and per-post X ratings are not in this repository.
 
 ## Limits
 
-Lurkers are invisible, so true concentration is larger. Word-list and VADER traits are crude; LLM ratings are not human-validated.
-Neither sample is the population.
+- Lurkers are invisible, so the true concentration is larger than measured.
+- LLM ratings are not human-validated. Two judges agree on direction in 92% of non-neutral cases, but individual ratings can be wrong.
+- The X corpus is keyword-collected and its posting-rate bins are thinned counts. Neither sample is the population.
