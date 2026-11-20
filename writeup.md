@@ -6,7 +6,7 @@
 
   mean of t over posts = E[p·t]/E[p] = E[t] + Cov(p, t)/E[p]
 
-Setting t = p gives the author of a random post a rate of E[p] + Var(p)/E[p] (size-biased sampling). The bias explains something only if (1) p is unequal and stable, and (2) p correlates with t. If Cov(p, t) = 0, discourse is a fair sample however concentrated it is.
+Setting t = p gives the author of a random post a rate of E[p] + Var(p)/E[p] (size-biased sampling). If Cov(p, t) = 0, discourse is a fair sample however concentrated it is.
 
 **Test.** I fixed hypotheses first, then took every Hacker News comment from 1-14 Nov 2026 (144,483 comments, 26,624 users; rate from week 1, traits from week 2).
 
