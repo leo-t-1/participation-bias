@@ -31,7 +31,14 @@ LLM, blind to author (needs `OPENAI_API_KEY` in `.env`, see `.env.example`).
 ## LLM-rated checks (gpt-5.4-mini, blind to author)
 
 - Tone (`llm_rate.py`, 1,500 comments): share rated dismissive or hostile rises from 6% (no week-1 comments) to 19% (25+ week-1 comments). Results: `results/llm_validation.json`.
-- Stance on AI (`stance_rate.py`, 1,800 comments on AI threads, -3 to 3): the pre-stated hypothesis that heavy posters are more extreme was not supported (Spearman rho = -0.01 for |stance|). Exploratory: heavy posters are more sceptical (mean stance 0.03 to -0.47). Results: `results/stance.json`.
+- Stance on AI (`stance_rate.py`, 1,800 comments on AI threads, -3 to 3, two judges: gpt-5.4-mini and gpt-4.1).
+  The judges agree well where both see a stance (n = 1,247: Spearman 0.80, same sign in 92% of non-neutral cases).
+  gpt-5.4-mini mostly scores no-view comments as 0 (37% zeros, 10% null); gpt-4.1 uses null more (21% zeros, 30% null).
+  - Pre-stated hypothesis, heavy posters are more extreme: not supported. Spearman rho of posting-rate bin vs |stance| is
+    0.00 (gpt-5.4-mini), 0.06 (gpt-4.1, p = 0.04), 0.03 (mean of both judges, p = 0.23).
+  - Exploratory: heavy posters are more sceptical under both judges. Mean stance from lightest to heaviest bin:
+    0.03 to -0.47 (gpt-5.4-mini, first run), -0.11 to -0.74 (gpt-4.1), -0.05 to -0.62 (mean of both, rho = -0.15).
+  - Results: `results/stance*.json`; every rating: `results/stance_ratings_*.json`.
 
 ## Limits
 

@@ -1,0 +1,90 @@
+{
+ "model": "gpt-4.1",
+ "n_rated": 1800,
+ "by_bin": [
+  {
+   "bin": "0",
+   "n": 300,
+   "share_with_stance": 0.6933333333333334,
+   "n_stance": 208,
+   "mean_stance": -0.11057692307692307,
+   "mean_extremity": 0.9471153846153846,
+   "se_extremity": 0.06328121374450503,
+   "share_strong": 0.14903846153846154,
+   "share_negative": 0.39903846153846156,
+   "share_positive": 0.27884615384615385
+  },
+  {
+   "bin": "1",
+   "n": 300,
+   "share_with_stance": 0.74,
+   "n_stance": 222,
+   "mean_stance": -0.17117117117117117,
+   "mean_extremity": 0.8738738738738738,
+   "se_extremity": 0.05274041402205151,
+   "share_strong": 0.0990990990990991,
+   "share_negative": 0.42792792792792794,
+   "share_positive": 0.2702702702702703
+  },
+  {
+   "bin": "2-4",
+   "n": 300,
+   "share_with_stance": 0.7366666666666667,
+   "n_stance": 221,
+   "mean_stance": -0.22624434389140272,
+   "mean_extremity": 0.9502262443438914,
+   "se_extremity": 0.05990059101498519,
+   "share_strong": 0.14479638009049775,
+   "share_negative": 0.45701357466063347,
+   "share_positive": 0.23529411764705882
+  },
+  {
+   "bin": "5-9",
+   "n": 300,
+   "share_with_stance": 0.7133333333333334,
+   "n_stance": 214,
+   "mean_stance": -0.40654205607476634,
+   "mean_extremity": 0.985981308411215,
+   "se_extremity": 0.05830559535179473,
+   "share_strong": 0.14018691588785046,
+   "share_negative": 0.5420560747663551,
+   "share_positive": 0.19626168224299065
+  },
+  {
+   "bin": "10-24",
+   "n": 300,
+   "share_with_stance": 0.6533333333333333,
+   "n_stance": 196,
+   "mean_stance": -0.3979591836734694,
+   "mean_extremity": 0.9591836734693877,
+   "se_extremity": 0.0646354891046624,
+   "share_strong": 0.14285714285714285,
+   "share_negative": 0.5051020408163265,
+   "share_positive": 0.18877551020408162
+  },
+  {
+   "bin": "25+",
+   "n": 300,
+   "share_with_stance": 0.67,
+   "n_stance": 201,
+   "mean_stance": -0.7412935323383084,
+   "mean_extremity": 1.109452736318408,
+   "se_extremity": 0.06757933237465326,
+   "share_strong": 0.208955223880597,
+   "share_negative": 0.6119402985074627,
+   "share_positive": 0.13432835820895522
+  }
+ ],
+ "spearman_bin_vs_extremity": {
+  "rho": 0.05795143253859115,
+  "p": 0.039552355675993765
+ },
+ "spearman_bin_vs_stance": {
+  "rho": -0.15690102807397593,
+  "p": 2.1059267460571134e-08
+ },
+ "spearman_bin_vs_has_stance": {
+  "rho": -0.04263703891960001,
+  "p": 0.07052838175746098
+ }
+}

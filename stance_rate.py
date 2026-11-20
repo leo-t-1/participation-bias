@@ -30,6 +30,7 @@ for j,(lo,hi,l) in enumerate(BINS):
     for u in us[:300]:
         t,w,st = random.choice(by_user[u]); sample.append(dict(bin=j, label=l, text=t, words=w, title=st))
 random.shuffle(sample)
+for i,x in enumerate(sample): x["i"]=i
 SYS = ("You rate the stance toward AI expressed in a single online forum comment from a thread about AI. Return JSON with one field, "
        "stance: an integer from -3 to 3, or null. -3 = strongly negative or dismissive about AI (overhyped, useless, harmful, a bubble); "
        "-1 = mildly sceptical; 0 = expresses a view that is balanced or neutral; 1 = mildly positive; "
@@ -62,6 +63,7 @@ ball = np.array([s["bin"] for s in ok]); has = np.array([s["stance"] is not None
 out["spearman_bin_vs_extremity"] = dict(rho=float(stats.spearmanr(b,e)[0]), p=float(stats.spearmanr(b,e)[1]))
 out["spearman_bin_vs_stance"] = dict(rho=float(stats.spearmanr(b,sv)[0]), p=float(stats.spearmanr(b,sv)[1]))
 out["spearman_bin_vs_has_stance"] = dict(rho=float(stats.spearmanr(ball,has)[0]), p=float(stats.spearmanr(ball,has)[1]))
-json.dump(out, open(os.path.join(OUT,"stance.json"),"w"), indent=1)
+json.dump(out, open(os.path.join(OUT,"stance_%s.json" % MODEL),"w"), indent=1)
+json.dump(ok, open(os.path.join(OUT,"stance_ratings_%s.json" % MODEL),"w"))
 for x in out["by_bin"]: print({k:(round(v,3) if isinstance(v,float) else v) for k,v in x.items()})
 print({k:v for k,v in out.items() if k.startswith("spearman")})
